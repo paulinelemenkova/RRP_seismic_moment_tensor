@@ -1,6 +1,10 @@
 \documentclass{rrparticle}
 \usepackage{graphicx}
 \usepackage{float}
+%\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage[hidelinks=true,bookmarks=true,hyperindex,breaklinks]{hyperref}
+	\hypersetup{bookmarksdepth=paragraph,colorlinks=true,linkcolor=Navy,urlcolor=DarkBlue,citecolor=black}
 
 %Obviously, the commands below are not really needed when typesetting your contribution!!!
 \newcommand{\miktex}{\hbox{Mik\kern-.15em\TeX}}
@@ -26,18 +30,18 @@ The study presents mapping seismic moment tensor solutions for analysis of geoph
 
 \section{Introduction}
 
-Geomorphological evolution of the oceanic trenches is largely controlled by a variety of factors including geological settings, tectonic plate movements and geomorphological profiling (Fujioka et al. 2002; Gong et al. 2017; Lemenkova, 2018; 2019a; 2019b), geophysical processes (Ogawa et al. 1997; \cite{Hall1995a}; Seekings \& Teng, 1977), submarine volcanism and slope steepness (Ozawa et al. 2004; Lemenkova, 2019c, 2020f) inducing intensity of sedimentation and marine biological factors contributing to the sediment supply. 
+Geomorphological evolution of the oceanic trenches is largely controlled by a variety of factors including geological settings, tectonic plate movements and geomorphological profiling \cite{Fujioka2002,Gong,Lemenkova2019a,Lemenkova2019b}  Lemenkova, 2018; 2019a; 2019b), geophysical processes \cite{Seekings,Hall1995a,Ogawa}, submarine volcanism and slope steepness \cite{Ozawa} Lemenkova, 2019c, 2020f) inducing intensity of sedimentation and marine biological factors contributing to the sediment supply. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{Fig1.jpg}
-\caption{Geologic map of the Philippine Sea Basin.  Solid red lines indicate boundaries between the lithospheric plates. Yellow fronts denote trench axes. Tectonic slab contours are depicted by the red dashed lines. Green arrows and relevant numbers indicate the convergence rates (mm/year) along the trenches. Magenta triangles denote hydrothermal areas mostly located along the Ryukyu Trench. Source: author.}
+\caption{Geologic map of the Philippine Sea Basin. Solid red lines indicate boundaries between the lithospheric plates. Yellow fronts denote trench axes. Tectonic slab contours are depicted by the red dashed lines. Green arrows and relevant numbers indicate the convergence rates (mm/year) along the trenches. Magenta triangles denote hydrothermal areas mostly located along the Ryukyu Trench. Source: author.}
 \label{pic1}
 \end{figure}
 
-Earlier studies on oceanic trenches highlighted relationship between the geomorphic patterns of the deep-sea channels, submarine fans and their topography related to the mid-ocean ridge tectonics, volcanism and dynamics of the Philippine back arc (Menard, 1955; Chang et al. 2007; Fujioka et al. 1999, Lemenkova, 2019d; \cite{Hall1995b}), as well as earthquakes and gravitation (Lin \& Lo, 2013). Double seismic zone beneath the Mariana Island arc is explained (Samowitz \& Forsyth, 1981) by the following conceptual scheme of the processes of the global plate tectonics. Subduction of the cooled plate into the mantle causes formation of the deep ocean trenches where, as a consequence, earthquakes and tsunamis originate. 
+Earlier studies on oceanic trenches highlighted relationship between the geomorphic patterns of the deep-sea channels, submarine fans and their topography related to the mid-ocean ridge tectonics, volcanism and dynamics of the Philippine back arc \cite{Menard,Chang,Fujioka1999} Lemenkova, 2019d; \cite{Hall1995b}), as well as earthquakes and gravitation \cite{LinLo}. Double seismic zone beneath the Mariana Island arc is explained \cite{Samowitz} by the following conceptual scheme of the processes of the global plate tectonics. Subduction of the cooled plate into the mantle causes formation of the deep ocean trenches where, as a consequence, earthquakes and tsunamis originate. 
 
-Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the Izu-Bonin-Mariana (IBM) trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The KPR, a remnant arc of the active IBM system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west Philippine Sea Plate: the subduction zone here is characterized by the Kyushu-Palau Ridge (KPR) subducting beneath the Kyushu Arc, Fig. \ref{pic1} (Cao et al. 2014). 
+Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the Izu-Bonin-Mariana (IBM) trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The KPR, a remnant arc of the active IBM system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west Philippine Sea Plate: the subduction zone here is characterized by the Kyushu-Palau Ridge (KPR) subducting beneath the Kyushu Arc, Fig. \ref{pic1} \cite{Cao}. 
 
 A set of geodynamic processes including subduction-interface rheology, phase-transition buoyancy, slab stagnation, rollback of mantle and ridge-push effects, cause significant trench motion of the IBM detected as advance by global plate-motion observations \cite{Bina,Cizkova}. 
 
@@ -53,7 +57,7 @@ Focal mechanisms (Fig. \ref{pic2}) were drawn using 'psmeca' module of Generic M
 \label{tab1}
 \end{figure}
 
-The original dataset of the focal mechanism solutions are from the was taken from the Global CMT Catalog, formerly known as the Harvard CMT catalog (Ekström et al. 2012). Technical parameters are set up as following: 
+The original dataset of the focal mechanism solutions are from the was taken from the Global CMT Catalog, formerly known as the Harvard CMT catalog \cite{Ekstrom}. Technical parameters are set up as following: 
 \begin{enumerate}\itemsep -0.5em 
   \item Moment magnitude (Mw) $<10$; 
   \item Surface wave magnitude (Ms): $<10$);
@@ -61,7 +65,7 @@ The original dataset of the focal mechanism solutions are from the was taken fro
   \item Data time span: 1976-2010
  \end{enumerate}
  
-	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table \ref{tab1} and Table \ref{tab2} used for mapping velocity (Fig. \ref{pic4}), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes (Müller, 2001). Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
+	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table \ref{tab1} and Table \ref{tab2} used for mapping velocity (Fig. \ref{pic4}), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes \cite{Mueller}. Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
 	$MS=log10(A/T)+1.66log10(D)+3.30$,
 where T is the measured wave period and D is the distance in radians. 
 	
@@ -98,19 +102,19 @@ where T is the measured wave period and Q is an empirical function of focal dept
   \item oblique fault, strike slip dominant, attitude ca. N° 40W / 70° W (right/left lateral), or N35° E / 70° E (left/right lateral)
  \end{itemize}
      
-The geoid model was plotted based on EGM-2008 grid at PSB margins using geophysical data by Pavlis et al. (2008) and visualised in GMT, Fig. \ref{pic3}. 
+The geoid model was plotted based on EGM-2008 grid at PSB margins using geophysical data \cite{Pavlis} and visualised in GMT, Fig. \ref{pic3}. 
 	
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{Fig3.jpg}
-\caption{Geoid model based on EGM-2008 grid at PSB margins. Data:  Pavlis et al. 2008. Mapping: GMT. Source: author. }
+\caption{Geoid model based on EGM-2008 grid at PSB margins. Data: \cite{Pavlis}. Mapping: GMT. Source: author. }
 \label{pic3}
 \end{figure}
 	
 The earthquakes event map at PSB area (Fig. \ref{pic5}) shows prime hypocentres and magnitude values by colour and size of the circles, respectively. The map was plotted on the basis of International Seismological Centre (ISC-EHB) Bulletin and overplayed on the Google Earth map as a file in Keyhole Markup language Zipped (KMZ), which is a file extension for a placemark file used by Google Earth. The geographic coordinates include x, y, z components in decimal degree defined by the WGS84. The overlay is plotted on Fig. \ref{pic5}.
 	
 \subsection{Velocity mapping}	
-	Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a PSB region were plotted using 'psvelo' module of GMT (Wessel \& Smith, 1998). Theoretical background of the best-fitting angular velocities and Mid-Ocean Ridge VELocity (MORVEL) is presented by DeMets et al. (2010) who described and modeled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include Pacific VELocity (PVEL) (Sella et al. 2002). Technical visualization of the velocity map (Fig. \ref{pic4}) was performed using following GMT code snippet: 
+	Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a PSB region were plotted using 'psvelo' module of GMT \cite{Wessel}. Theoretical background of the best-fitting angular velocities and Mid-Ocean Ridge VELocity (MORVEL) is presented by \cite{DeMets2010} who described and modeled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include Pacific VELocity (PVEL) \cite{Sella}. Technical visualization of the velocity map (Fig. \ref{pic4}) was performed using following GMT code snippet: 
 
 \begin{itemize}\itemsep -0.5em 
   \item Velocity ellipses in (N,E) convention: $gmt psvelo CMT.txt -R -J -W0.3p,green -L -Ggreen -Se0.1/0.95/5 -A0.2p -O -K >> ps.$ Here, the Vscale gives the scaling of the velocity in inches; the CMT.txt is the dataset; parameters -R and -J indicate the region (in this case coordinates: -R120/152/4/35)
@@ -118,7 +122,7 @@ The earthquakes event map at PSB area (Fig. \ref{pic5}) shows prime hypocentres 
    \item Rotational wedges: $gmt psvelo CMT.txt -R -J -W0.05p -L -Sw0.5/1.e7 -D2 -Gslateblue2 -Elightgray -A0.2p -O -K >> ps.$ Here, the '-Sw0.5/1.e7' indicates Rotational wedges with kwargs as $Wedge\_scale$ and Wedge\_mag. The '-D2' parameter enables to rescale the uncertainties of velocities by $sigma\_scale$ (in this case 2 scale was set up). 
  \end{itemize}
 	
-The respective red and green circles with confidence ellipses are PVEL dataset estimates, which use a plate circuit to estimate subduction across the plate subduction zones in the west Pacific. According to DeMets et al. (1990), relative to the Philippine Sea plate, the Pacific plate rotates counter-clockwise around a pole near the southern end of the plate boundary. The best-fitting angular velocity indicates rapid decrease of the convergence rates southward, from $49 pm 0.7 mm yr^{-1} (1\sigma)$ at the northern end of the Izu-Bonin trench to 9 pm 0.8 mm $yr^-1$ of orthogonal subduction along the southern Yap trench, south off Mariana Trench (DeMets et al. 2010).
+The respective red and green circles with confidence ellipses are PVEL dataset estimates, which use a plate circuit to estimate subduction across the plate subduction zones in the west Pacific. According to \cite{DeMets1990}, relative to the Philippine Sea plate, the Pacific plate rotates counter-clockwise around a pole near the southern end of the plate boundary. The best-fitting angular velocity indicates rapid decrease of the convergence rates southward, from $49 pm 0.7 mm yr^{-1} (1\sigma)$ at the northern end of the Izu-Bonin trench to 9 pm 0.8 mm $yr^-1$ of orthogonal subduction along the southern Yap trench, south off Mariana Trench \cite{DeMets2010}.
 
 \begin{figure}[H]
 \centering
@@ -127,7 +131,7 @@ The respective red and green circles with confidence ellipses are PVEL dataset e
 \label{pic4}
 \end{figure}
 	
-The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and 2° along the lithospheric plate boundary (Sella et al. 2002), which reflects the overlap in the GPS stations used to estimate the motions of the two plates. The existence of the Caroline plate was first proposed by Weissel \& Anderson (1978), who estimated its motions from a synthesis of marine seismic, bathymetric, and seismologic observations from its boundaries with the Pacific and Philippine plates. Located in the western equatorial Pacific immediately south of the PSP (Fig. \ref{pic1}), it remains the poorly understood and enigmatic with uncertainties about the style and rate of its present deformation caused by scarcity of reliable kinematic data.
+The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and 2° along the lithospheric plate boundary (Sella et al. 2002), which reflects the overlap in the GPS stations used to estimate the motions of the two plates. The existence of the Caroline plate was first proposed by \cite{Weissel} who estimated its motions from a synthesis of marine seismic, bathymetric, and seismologic observations from its boundaries with the Pacific and Philippine plates. Located in the western equatorial Pacific immediately south of the PSP (Fig. \ref{pic1}), it remains the poorly understood and enigmatic with uncertainties about the style and rate of its present deformation caused by scarcity of reliable kinematic data.
 	
 \section{Results}
 	
@@ -142,18 +146,18 @@ Seismic phenomena is the PSB (Fig. \ref{pic2}) can be explained as the result of
 
 The activity differs by divergence and convergence zones being moderate in the zones of plate divergence and including deep shocks at shallow depths in the zones of plate convergence. Seismic data on focal mechanisms are presented at CMT catalogue which gives a relative direction of tectonic plates motion throughout active belts. Focal mechanisms point at relative motions of the lithosphere plates determined from magnetic and topographic data associated with the zones of plate divergence.
 
-A phenomena of the deep-sea trench includes its migration that depends primarily on the age at the trench (Faccenna et al. 2009; Gutscher et al. 2016): located on the place of the subduction plate boundary at a given time, the trench may change its location over time as a result of the complex processes of the global plate tectonics. As proved by Lallemand et al. (2008), trench migration and hence, geomorphic fluctuations, depends on the lower plate parameters and controlled by the subducting plate velocity $V_{sub}$.
+A phenomena of the deep-sea trench includes its migration that depends primarily on the age at the trench \cite{Faccenna,Gutscher}: located on the place of the subduction plate boundary at a given time, the trench may change its location over time as a result of the complex processes of the global plate tectonics. As proved previously \cite{Lallemand}, trench migration and hence, geomorphic fluctuations, depends on the lower plate parameters and controlled by the subducting plate velocity $V_{sub}$.
 	
-Philippine Sea Basin is marked by the complex interaction of three lithospheric plates: Eurasian, Australian and the PSP, which includes collision, subduction and accretion. Old, heavy and large ($103,300,000 km^2$) Pacific plate plays the major role comparing to the Australian Plate ($47,000,000 km^2$) and the PSP $5,500,000 km^2$ \cite{Alden}. The morphology of the Pacific plate has a low dip angle at shallow depths. The PSP, a large and tectonically complex region of the western Pacific located between the Pacific, Eurasian and Australian plates, is the world’s largest marginal basin plate (Sdrolias et al. 2004). The PSP has two back-arc basins formed in Oligocene to Miocene period: Parece Vela and Shikoku Basins (Fig. \ref{pic1}). 
+Philippine Sea Basin is marked by the complex interaction of three lithospheric plates: Eurasian, Australian and the PSP, which includes collision, subduction and accretion. Old, heavy and large ($103,300,000 km^2$) Pacific plate plays the major role comparing to the Australian Plate ($47,000,000 km^2$) and the PSP $5,500,000 km^2$ \cite{Alden}. The morphology of the Pacific plate has a low dip angle at shallow depths. The PSP, a large and tectonically complex region of the western Pacific located between the Pacific, Eurasian and Australian plates, is the world’s largest marginal basin plate \cite{Sdrolias}. The PSP has two back-arc basins formed in Oligocene to Miocene period: Parece Vela and Shikoku Basins (Fig. \ref{pic1}). 
 	
-Slab dynamics is one of the important driving forces for the trench formation affecting the mechanisms of its migration (retreat or advance). It is therefore crucial to characterize the origin of the subducting slab morphology in the deep mantle identifying the features of subduction zones, which are among the fundamental issues of solid Earth (Yoshida, 2017). Effects of slab mineralogy and phase chemistry on the subduction dynamics (buoyancy, stress field), kinematics (rate of subduction and plate motion), elasticity (deformation and seismic wave speed), thermometry (effects of latent heat, isobaric superheating) and seismicity (adiabatic shear instabilities) are discussed previously \cite{Bina}. 
+Slab dynamics is one of the important driving forces for the trench formation affecting the mechanisms of its migration (retreat or advance). It is therefore crucial to characterize the origin of the subducting slab morphology in the deep mantle identifying the features of subduction zones, which are among the fundamental issues of solid Earth \cite{Yoshida}. Effects of slab mineralogy and phase chemistry on the subduction dynamics (buoyancy, stress field), kinematics (rate of subduction and plate motion), elasticity (deformation and seismic wave speed), thermometry (effects of latent heat, isobaric superheating) and seismicity (adiabatic shear instabilities) are discussed previously \cite{Bina}. 
 
 \section{Conclusion}
 The datasets were combined with multi-source grids explained in detailed. A multi-source dataset applied in this research includes a compilation of GEBCO, ETOPO1, ETOPO5, CMT, EGM96, GVP and Global Self-consistent Hierarchical High-resolution Geography Database (GSHHGD) sources. Combined studies of seismic and tectonic settings (focal mechanism, velocity, geological lineaments), volcanic activity and general topography of the ocean seafloor are essential for understanding the complicated bathymetry and geomorphic patterns of the trenches in the Philippine Sea Basin. In this paper, a multi-source GIS data analyze on the southern side of the Philippine Sea Basin and discussion of the current situation and historical evolution of the geology of this area was performed and presented. 
 
-	Research novelty of the presented research consists in the multi-source data analysis applied for geophysical analysis of the current situation representing seismicity of the region, and earthquake locations, magnitude and distribution by intensity via the GMT modules. A combination of the geophysical visualization, geological analysis and GMT based mapping of the Philippine Sea margins does not present in the existing literature. Practical novelty of the work consists in the tested methodology of the GMT-based geophysical data visualization. In contrast to the classic cartographic approaches having GUI, e.g. ArcGIS ESRI based, in geodata visualization and mapping (Gauger et al. 2007; Gohl et al. 2006a, 2006b; Lemenkova, 2011;  Kuhn et al. 2006; Suetova et al. 2005a, 2005b; Klaučo et al. 2017, 2013; Lemenkova et al. 2012), or statistical approaches (Lemenkova, 2019e, 2019f), GMT is notable for its scripting algorithms as a core conceptual methodology. 
+Research novelty of the presented research consists in the multi-source data analysis applied for geophysical analysis of the current situation representing seismicity of the region, and earthquake locations, magnitude and distribution by intensity via the GMT modules. A combination of the geophysical visualization, geological analysis and GMT based mapping of the Philippine Sea margins does not present in the existing literature. Practical novelty of the work consists in the tested methodology of the GMT-based geophysical data visualisation using available techniques \cite{Lemenkova2022a,Lemenkova2022b}. In contrast to the classic cartographic approaches having GUI, e.g. ArcGIS ESRI based, in geodata visualization and mapping (Gauger et al. 2007;  Lemenkova, 2011;  Suetova et al. 2005a, 2005b; \cite{Klauco2013,Klauco2017,Lemenkova2021a}; Lemenkova et al. 2012), or statistical approaches (Lemenkova, 2019e, 2019f), GMT is notable for its scripting algorithms as a core conceptual methodology. 
 	
-	Semi-automated methods of cartographic digitizing presented previously (Schenke \& Lemenkova, 2008) was driven by the developed algorithms of the machine learning (ML). Application of the scripting in the cartographic routine, minimizes handmade routine and subjectivity in mapping and increases overall precision of the data processing and visualization accuracy. GMT proposes more advanced solution in the automatization through ML based mapping that results in a high quality cartographic mapping (Lemenkova, 2020a, 2020b, 2020c, 2020d, 2020e). Specifically, among other modules, 'psmeca', 'psvelo' were tested in the current work for seismic mapping and plotting earthquakes focal mechanisms as demonstrated in this paper. 
+Semi-automated methods of cartographic digitising presented previously \cite{Lemenkova2021b} was driven by the developed algorithms of the machine learning (ML). Application of the scripting in the cartographic routine, minimizes handmade routine and subjectivity in mapping and increases overall precision of the data processing and visualization accuracy. GMT proposes more advanced solution in the automatization through ML based mapping that results in a high quality cartographic mapping (Lemenkova, 2020a, 2020b, 2020c, 2020d, 2020e). Specifically, among other modules, 'psmeca', 'psvelo' were tested in the current work for seismic mapping and plotting earthquakes focal mechanisms as demonstrated in this paper. 
 	
 \begin{acknowledgement}
 The author owes her gratitude to the anonymous reviewers who performed careful reading and a rigorous review of this manuscript. The author acknowledges the help from the Technical Editor Mrs. Margareta Oancea and the Editors of the Romanian Academy Publishing House. 
@@ -163,59 +167,77 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{Alden}Alden, A., 2019. Here are the Sizes of Tectonic or Lithospheric Plates. Retrieved from https://www.thoughtco.com/sizes-of-tectonic-or-lithospheric-plates-4090143 
 
-\bibitem{Bina}Bina, C. R.; Stein, S.; Marton, F. C., Van Ark, E. M., 2001. Implications of slab mineralogy for subduction dynamics. Physics of the Earth and Planetary Interiors \textbf{127}, 51--66. https://doi.org/10.1016/S0031-9201(01)00221-7 
+\bibitem{Bina}Bina, C. R.; Stein, S.; Marton, F. C., Van Ark, E. M., 2001. Implications of slab mineralogy for subduction dynamics. Physics of the Earth and Planetary Interiors \textbf{127}, 51--66. \href{https://doi.org/10.1016/S0031-9201(01)00221-7}{doi: 10.1016/S0031-9201(01)00221-7}
 
-\bibitem{Cao} Cao, L.; Wang, Z.; Wu, S., Gao, X., 2014. A new model of slab tear of the subducting Philippine Sea Plate associated with Kyushu-Palau Ridge subduction. Tectonophysics \textbf{636}, 158–169. https://doi.org/10.1016/j.tecto.2014.08.012 
+\bibitem{Cao} Cao, L.; Wang, Z.; Wu, S., Gao, X., 2014. A new model of slab tear of the subducting Philippine Sea Plate associated with Kyushu-Palau Ridge subduction. Tectonophysics \textbf{636}, 158–169. \href{https://doi.org/10.1016/j.tecto.2014.08.012}{doi: 10.1016/j.tecto.2014.08.012}
 
-\bibitem{Chang} Chang, W. Y., Yu, G. K., Hwang, R. D., Chiu, J. K., 2007. Lateral Variations of Rayleigh-wave Dispersions in the Philippine Sea region. Terrestrial, Atmospheric and Oceanic Sciences \textbf{18}, 859--878. https://doi.org/10.3319/TAO.2007.18.5.859(T)
+\bibitem{Chang} Chang, W. Y., Yu, G. K., Hwang, R. D., Chiu, J. K., 2007. Lateral Variations of Rayleigh-wave Dispersions in the Philippine Sea region. Terrestrial, Atmospheric and Oceanic Sciences \textbf{18}, 859--878. \href{https://doi.org/10.3319/TAO.2007.18.5.859(T)}{doi: 10.3319/TAO.2007.18.5.859(T)}
 
-\bibitem{Cizkova} Cížková, H., Bina, C.R., 2015. Geodynamics of trench advance: Insights from a Philippine-Sea-style geometry. Earth and Planetary Science Letters \textbf{430}, 408--415. https://doi.org/10.1016/j.epsl.2015.07.004
+\bibitem{Cizkova} Cížková, H., Bina, C.R., 2015. Geodynamics of trench advance: Insights from a Philippine-Sea-style geometry. Earth and Planetary Science Letters \textbf{430}, 408--415. \href{https://doi.org/10.1016/j.epsl.2015.07.004}{doi: 10.1016/j.epsl.2015.07.004}
 
-\bibitem{DeMets1990} DeMets, C., Gordon, R. G., Argus, D. F., Stein, S., 1990. Current plate motions. Geophysical Journal International, \textbf{101}, 425--478. https://doi.org/10.1111/j.1365-246X.1990.tb06579.x 
+\bibitem{DeMets1990} DeMets, C., Gordon, R. G., Argus, D. F., Stein, S., 1990. Current plate motions. Geophysical Journal International, \textbf{101}, 425--478. \href{https://doi.org/10.1111/j.1365-246X.1990.tb06579.x}{doi: 10.1111/j.1365-246X.1990.tb06579.x}
 
-\bibitem{DeMets2010}  DeMets, C.; Gordon, R. G., Argus, D. F., 2010. Geologically current plate motions. Geophysical Journal International, \textbf{181}, 1--80. https://doi.org/10.1111/j.1365-246X.2009.04491.x 
+\bibitem{DeMets2010}  DeMets, C.; Gordon, R. G., Argus, D. F., 2010. Geologically current plate motions. Geophysical Journal International, \textbf{181}, 1--80. \href{https://doi.org/10.1111/j.1365-246X.2009.04491.x}{doi: 10.1111/j.1365-246X.2009.04491.x}
 
-\bibitem{Ekstrom} Ekström, G., Nettles, M., Dziewonski, A. M., 2012. The global CMT project 2004-2010: Centroid-moment tensors for 13,017 earthquakes. Physics of the Earth and Planetary Interiors \textbf{200--201}, 1--9. https://doi.org/10.1016/j.pepi.2012.04.002 
+\bibitem{Ekstrom} Ekström, G., Nettles, M., Dziewonski, A. M., 2012. The global CMT project 2004-2010: Centroid-moment tensors for 13,017 earthquakes. Physics of the Earth and Planetary Interiors \textbf{200--201}, 1--9. \href{https://doi.org/10.1016/j.pepi.2012.04.002}{doi: 10.1016/j.pepi.2012.04.002}
 
-\bibitem{Faccenna} Faccenna, C., Giuseppe, E.D., Funiciello, F., Lallemand, S., van Hunen, J., 2009. Control of seafloor aging on the migration of the Izu-Bonin-Mariana Trench. Earth and Planetary Science Letters. \textbf{288}, 386--398. https://doi.org/10.1016/j.epsl.2009.09.042 
+\bibitem{Faccenna} Faccenna, C., Giuseppe, E.D., Funiciello, F., Lallemand, S., van Hunen, J., 2009. Control of seafloor aging on the migration of the Izu-Bonin-Mariana Trench. Earth and Planetary Science Letters. \textbf{288}, 386--398. \href{https://doi.org/10.1016/j.epsl.2009.09.042}{doi: 10.1016/j.epsl.2009.09.042}
 
-\bibitem{Fujioka1999} Fujioka, K., Okino, K., Kanamatsu, T., Ohara, Y., Ishizuka, O., Haraguchi, S., Ishii, T., 1999. Enigmatic extinct spreading center in the West Philippine backarc basin unveiled. Geology \textbf{27}, 1135--1138. https://doi.org/10.1130/0091-7613(1999)027<1135:EESCIT>2.3.CO;2
+\bibitem{Fujioka1999} Fujioka, K., Okino, K., Kanamatsu, T., Ohara, Y., Ishizuka, O., Haraguchi, S., Ishii, T., 1999. Enigmatic extinct spreading center in the West Philippine backarc basin unveiled. Geology \textbf{27}, 1135--1138. \href{https://doi.org/10.1130/0091-7613(1999)027<1135:EESCIT>2.3.CO;2}{doi: 10.1130/0091-7613(1999)027<1135:EESCIT>2.3.CO;2}
 
-\bibitem{Fujioka2002} Fujioka, K., Okino, K., Kanamatsu, T., Ohara, Y., 2002. Morphology and origin of the Challenger Deep in the Southern Mariana Trench. Geophysical Research Letters, \textbf{29}, 13--72. https://doi.org/10.1029/2001GL013595
+\bibitem{Fujioka2002} Fujioka, K., Okino, K., Kanamatsu, T., Ohara, Y., 2002. Morphology and origin of the Challenger Deep in the Southern Mariana Trench. Geophysical Research Letters, \textbf{29}, 13--72. \href{https://doi.org/10.1029/2001GL013595}{doi: 10.1029/2001GL013595}
 
-\bibitem{Gong} Gong, W., Jiang, X., Guo, Y., Xing, J., Li, C., Sun, Y., 2017. Strike-slip tectonics within the northernmost Philippine Sea plate in an arc continent collisional setting. Journal of Asian Earth Sciences, \textbf{146}, 265--278. https://doi.org/10.1016/j.jseaes.2017.05.032 
+\bibitem{Lemenkova2022a} Lemenkova, P., 2022. Tanzania Craton, Serengeti Plain and Eastern Rift Valley: mapping of geospatial data by scripting techniques. Estonian Journal of Earth Sciences, \textbf{71(2)}, 61--79,	\href{https://doi.org/10.3176/earth.2022.05}{doi: 10.3176/earth.2022.05}
 
-\bibitem{Gutscher} Gutscher, M. A., Klingelhoefer, F., Theunissen, T., Spakman, W., Berthet, T., Wang, T. K., Lee, C. S., 2016. Thermal modeling of the SW Ryukyu forearc (Taiwan): Implications for the seismogenic zone and the age of the subducting Philippine Sea Plate (Huatung Basin). Tectonophysics, \textbf{692}, 131--142. https://doi.org/10.1016/j.tecto.2016.03.029
+\bibitem{Gong} Gong, W., Jiang, X., Guo, Y., Xing, J., Li, C., Sun, Y., 2017. Strike-slip tectonics within the northernmost Philippine Sea plate in an arc continent collisional setting. Journal of Asian Earth Sciences, \textbf{146}, 265--278. \href{https://doi.org/10.1016/j.jseaes.2017.05.032}{doi: 10.1016/j.jseaes.2017.05.032}
 
-\bibitem{Hall1995a} Hall, R., Ali, J. R., Anderson, C.D., Baker, S. J., 1995. Origin and motion history of the Philippine Sea Plate. Tectonophysics, \textbf{251}, 229--250. https://doi.org/10.1016/0040-1951(95)00038-0 
+\bibitem{Gutscher} Gutscher, M. A., Klingelhoefer, F., Theunissen, T., Spakman, W., Berthet, T., Wang, T. K., Lee, C. S., 2016. Thermal modeling of the SW Ryukyu forearc (Taiwan): Implications for the seismogenic zone and the age of the subducting Philippine Sea Plate (Huatung Basin). Tectonophysics, \textbf{692}, 131--142. \href{https://doi.org/10.1016/j.tecto.2016.03.029}{doi: 10.1016/j.tecto.2016.03.029}
 
-\bibitem{Hall1995b} Hall, R., Fuller, M., Ali, J. R., Anderson, C. D. 1995. The Philippine Sea Plate: magnetism and reconstructions. Geophysical Monograph Series AGU, Active Margins and Marginal Basins of the Western Pacific, \textbf{88}, 371--404. https://doi.org/10.1029/GM088p0371 
+\bibitem{Hall1995a} Hall, R., Ali, J. R., Anderson, C.D., Baker, S. J., 1995. Origin and motion history of the Philippine Sea Plate. Tectonophysics, \textbf{251}, 229--250. \href{https://doi.org/10.1016/0040-1951(95)00038-0}{doi: 10.1016/0040-1951(95)00038-0}
 
-\bibitem{Klauco2017} Klaučo, M., Gregorová, B., Stankov, U., Marković, V., Lemenkova, P. 2017. Land planning as a support for sustainable development based on tourism: A case study of Slovak Rural Region. Environmental Engineering and Management Journal, \textbf{2(16)}, 449--458. https://doi.org/10.30638/eemj.2017.045 
+\bibitem{Hall1995b} Hall, R., Fuller, M., Ali, J. R., Anderson, C. D. 1995. The Philippine Sea Plate: magnetism and reconstructions. Geophysical Monograph Series AGU, Active Margins and Marginal Basins of the Western Pacific, \textbf{88}, 371--404. \href{https://doi.org/10.1029/GM088p0371}{doi: 10.1029/GM088p0371}
 
-\bibitem{Klauco2013} Klaučo, M., Gregorová, B., Stankov, U., Marković, V., Lemenkova, P. 2013. Determination of ecological significance based on geostatistical assessment: a case study from the Slovak Natura 2000 protected area. Open Geosciences, \textbf{5(1)}, 28--42. https://doi.org/10.2478/s13533-012-0120-0
+\bibitem{Klauco2017} Klaučo, M., Gregorová, B., Stankov, U., Marković, V., Lemenkova, P. 2017. Land planning as a support for sustainable development based on tourism: A case study of Slovak Rural Region. Environmental Engineering and Management Journal, \textbf{2(16)}, 449--458. \href{https://doi.org/10.30638/eemj.2017.045}{doi: 10.30638/eemj.2017.045} 
 
-\bibitem{Lallemand}Lallemand, S., Heuret, A., Faccenna, C., Funiciello F., 2008. Subduction dynamics as revealed by trench migration. Tectonics, \textbf{27}, TC3014. https://doi.org/10.1029/2007TC002212 
+\bibitem{Klauco2013} Klaučo, M., Gregorová, B., Stankov, U., Marković, V., Lemenkova, P. 2013. Determination of ecological significance based on geostatistical assessment: a case study from the Slovak Natura 2000 protected area. Open Geosciences, \textbf{5(1)}, 28--42. \href{https://doi.org/10.2478/s13533-012-0120-0}{doi: 10.2478/s13533-012-0120-0}
 
-\bibitem{LinLo} Lin, J.Y., Lo, C.L., 2013. Earthquake-induced crustal gravitational potential energy change in the Philippine area. Journal of Asian Earth Sciences, \textbf{66}, 215--223. https://doi.org/10.1016/j.jseaes.2013.01.009 
+\bibitem{Lallemand}Lallemand, S., Heuret, A., Faccenna, C., Funiciello F., 2008. Subduction dynamics as revealed by trench migration. Tectonics, \textbf{27}, TC3014. \href{https://doi.org/10.1029/2007TC002212}{doi: 10.1029/2007TC002212}
+
+\bibitem{LinLo} Lin, J.Y., Lo, C.L., 2013. Earthquake-induced crustal gravitational potential energy change in the Philippine area. Journal of Asian Earth Sciences, \textbf{66}, 215--223. \href{https://doi.org/10.1016/j.jseaes.2013.01.009}{doi: 10.1016/j.jseaes.2013.01.009}
 
 \bibitem{Menard} Menard, H.W., 1955. Deep-sea channels, topography, and sedimentation. American Association of Petroleum Geologists Bulletin, \textbf{39}, 236--255.
 
 \bibitem{Mueller} Müller, D., 2001. Deep Earth Structure and Global Tectonics. University of Sydney, School of Geosciences, Division of Geology and Geophysics, GEOL Geological Hazards and Solutions.
 
-\bibitem{Ogawa} Ogawa, Y., Kobayashi, K., Hotta, H., Fujioka, K., 1997. Tension cracks on the oceanward slopes of the northern Japan and Mariana Trenches. Marine Geology, \textbf{141}, 111--123. https://doi.org/10.1016/S0025-3227(97)00059-5 
+\bibitem{Ogawa} Ogawa, Y., Kobayashi, K., Hotta, H., Fujioka, K., 1997. Tension cracks on the oceanward slopes of the northern Japan and Mariana Trenches. Marine Geology, \textbf{141}, 111--123. \href{https://doi.org/10.1016/S0025-3227(97)00059-5}{doi: 10.1016/S0025-3227(97)00059-5}
 
-\bibitem{Ozawa} Ozawa, A., Tagami, T., Listanco, E. L., Arpa, C. B., Sudo, M., 2004. Initiation and propagation of subduction along the Philippine Trench: evidence from the temporal and spatial distribution of volcanoes. Journal of Asian Earth Sciences, \textbf{23}, 105--111. https://doi.org/10.1016/S1367-9120(03)00112-3 
+\bibitem{Lemenkova2019a} Lemenkova, P., 2019. GMT Based Comparative Analysis and Geomorphological Mapping of the Kermadec and Tonga Trenches, Southwest Pacific Ocean. Geographia Technica, \textbf{14}(2), 39--48. \href{https://doi.org/10.21163/GT_2019.142.04}{doi: 10.21163/GT\_2019.142.04}
 
-\bibitem{Pavlis} Pavlis, N.K., Holmes, S.A., Kenyon, S.C., Factor, J.K., 2012. The development and evaluation of the Earth Gravitational Model 2008 (EGM2008). Journal of Geophysical Research, \textbf{117}, B04406, https://doi.org/10.1029/2011JB008916
+\bibitem{Lemenkova2019b} Lemenkova, P., 2019. Statistical Analysis of the Mariana Trench Geomorphology Using R Programming Language. Geodesy and Cartography, \textbf{45}(2), 57--84. \href{https://doi.org/10.3846/gac.2019.3785}{doi: 10.3846/gac.2019.3785}
 
-\bibitem{Samowitz} Samowitz, I.R., Forsyth, D.W., 1981. Double seismic zone beneath the Mariana Island arc. Journal of Geophysical Research, \textbf{86}, 7013--7021. https://doi.org/10.1029/JB086iB08p07013 
+\bibitem{Ozawa} Ozawa, A., Tagami, T., Listanco, E. L., Arpa, C. B., Sudo, M., 2004. Initiation and propagation of subduction along the Philippine Trench: evidence from the temporal and spatial distribution of volcanoes. Journal of Asian Earth Sciences, \textbf{23}, 105--111. \href{https://doi.org/10.1016/S1367-9120(03)00112-3}{doi: 10.1016/S1367-9120(03)00112-3}
 
-\bibitem{Sdrolias} Sdrolias, M., Roest, W.R., Müller, R.D., 2004. An expression of Philippine Sea plate rotation: the Parece Vela and Shikoku Basins. Tectonophysics, 394: 69--86. https://doi.org/10.1016/j.tecto.2004.07.061 
+\bibitem{Pavlis} Pavlis, N.K., Holmes, S.A., Kenyon, S.C., Factor, J.K., 2012. The development and evaluation of the Earth Gravitational Model 2008 (EGM2008). Journal of Geophysical Research, \textbf{117}, B04406. \href{https://doi.org/10.1029/2011JB008916}{doi: 10.1029/2011JB008916}
 
-\bibitem{Seekings} Seekings, L.C., Teng, T.L., 1977. Lateral variations in the structure of the Philippine Sea Plate. Journal of Geophysical Research, \textbf{82}, 317--324.  https://doi.org/10.1029/JB082i002p00317 
+\bibitem{Samowitz} Samowitz, I.R., Forsyth, D.W., 1981. Double seismic zone beneath the Mariana Island arc. Journal of Geophysical Research, \textbf{86}, 7013--7021. \href{https://doi.org/10.1029/JB086iB08p07013}{doi: 10.1029/JB086iB08p07013}
 
-\bibitem{Sella} Sella, G.F., Dixon, T.H., Mao, A., 2002. REVEL: a model for recent plate velocities from space geodesy”, Journal of Geophysical Research, \textbf{107} 11--30.  https://doi.org/10.1029/2000JB000033 
+\bibitem{Sdrolias} Sdrolias, M., Roest, W.R., Müller, R.D., 2004. An expression of Philippine Sea plate rotation: the Parece Vela and Shikoku Basins. Tectonophysics, \textbf{394} 69--86. \href{https://doi.org/10.1016/j.tecto.2004.07.061}{doi: 10.1016/j.tecto.2004.07.061}
+
+\bibitem{Lemenkova2021a} Lemenkova, P. 2021. Robust Vegetation Detection Using RGB Colour Composites and Isoclust Classification of the Landsat TM Image. Geomatics, Landmanagement and Landscape, \textbf{4}, 147--167. \href{https://doi.org/10.5281/zenodo.6347500}{doi: 10.5281/zenodo.6347500}
+
+\bibitem{Seekings} Seekings, L.C., Teng, T.L., 1977. Lateral variations in the structure of the Philippine Sea Plate. Journal of Geophysical Research, \textbf{82}, 317--324. \href{https://doi.org/10.1029/JB082i002p00317}{doi: 10.1029/JB082i002p00317}
+
+\bibitem{Sella} Sella, G.F., Dixon, T.H., Mao, A., 2002. REVEL: a model for recent plate velocities from space geodesy”, Journal of Geophysical Research, \textbf{107}, 11--30. \href{https://doi.org/10.1029/2000JB000033}{doi: 10.1029/2000JB000033}
+
+\bibitem{Lemenkova2022b} Lemenkova, P. 2022. Seismicity in the Afar Depression and Great Rift Valley, Ethiopia. Environmental Research, Engineering and Management, \textbf{78(1)}, 83--96. \href{https://doi.org/10.5755/j01.erem.78.1.29963}{doi: 10.5755/j01.erem.78.1.29963}
+
+\bibitem{Weissel} Weissel, J.K., Anderson, R.N., 1978. Is there a Caroline plate? Earth Planetary Science Letters, \textbf{41}, 143--158. \href{https://doi.org/10.1016/0012-821X(78)90004-3}{doi: 10.1016/0012-821X(78)90004-3}
+
+\bibitem{Wessel} Wessel, P., Smith, W.H.F., 1998. New, improved version of generic mapping tools released. EOS Transactions of the AGU, \textbf{79(47)}, 579--579. \href{https://doi.org/10.1029/98EO00426}{doi: 10.1029/98EO00426}
+
+\bibitem{Lemenkova2021b} Lemenkova, P. Geophysical Mapping of Ghana Using Advanced Cartographic Tool GMT. Kartografija i Geoinformacije, \textbf{20}(36), 16--37 (2021). \href{https://doi.org/10.32909/kg.20.36.2}{doi: 10.32909/kg.20.36.2}
+
+\bibitem{Yoshida} Yoshida, M., 2017. Trench dynamics: Effects of dynamically migrating trench on subducting slab morphology and characteristics of subduction zones systems. Physics of the Earth and Planetary Interiors, \textbf{268}, 35--53. \href{https://doi.org/10.1016/j.pepi.2017.05.004}{doi: 10.1016/j.pepi.2017.05.004}
 
 \end{thebibliography}
 
