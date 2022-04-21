@@ -1,5 +1,6 @@
 \documentclass{rrparticle}
 \usepackage{graphicx}
+\usepackage{float}
 
 %Obviously, the commands below are not really needed when typesetting your contribution!!!
 \newcommand{\miktex}{\hbox{Mik\kern-.15em\TeX}}
@@ -27,16 +28,23 @@ The study presents mapping seismic moment tensor solutions for analysis of geoph
 
 Geomorphological evolution of the oceanic trenches is largely controlled by a variety of factors including geological settings, tectonic plate movements and geomorphological profiling (Fujioka et al. 2002; Gong et al. 2017; Lemenkova, 2018; 2019a; 2019b), geophysical processes (Ogawa et al. 1997; Hall et al. 1995a; Seekings \& Teng, 1977), submarine volcanism and slope steepness (Ozawa et al. 2004; Lemenkova, 2019c, 2020f) inducing intensity of sedimentation and marine biological factors contributing to the sediment supply. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig1.jpg}
+\caption{Geologic map of the Philippine Sea Basin.  Solid red lines indicate boundaries between the lithospheric plates. Yellow fronts denote trench axes. Tectonic slab contours are depicted by the red dashed lines. Green arrows and relevant numbers indicate the convergence rates (mm/year) along the trenches. Magenta triangles denote hydrothermal areas mostly located along the Ryukyu Trench. Source: author.}
+\label{pic1}
+\end{figure}
+
 Earlier studies on oceanic trenches highlighted relationship between the geomorphic patterns of the deep-sea channels, submarine fans and their topography related to the mid-ocean ridge tectonics, volcanism and dynamics of the Philippine back arc (Menard, 1955; Chang et al. 2007; Fujioka et al. 1999, Lemenkova, 2019d; Hall et al. 1995b), as well as earthquakes and gravitation (Lin \& Lo, 2013). Double seismic zone beneath the Mariana Island arc is explained (Samowitz \& Forsyth, 1981) by the following conceptual scheme of the processes of the global plate tectonics. Subduction of the cooled plate into the mantle causes formation of the deep ocean trenches where, as a consequence, earthquakes and tsunamis originate. 
 
-Active volcanism and seismic situation around Philippine Sea margins (Fig. 5) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the Izu-Bonin-Mariana (IBM) trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The KPR, a remnant arc of the active IBM system results from the spreading of the Shikoku Basin (Fig. 1). It plays a key role in the subduction process of the west Philippine Sea Plate: the subduction zone here is characterized by the Kyushu-Palau Ridge (KPR) subducting beneath the Kyushu Arc, Fig. 1 (Cao et al. 2014). 
+Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the Izu-Bonin-Mariana (IBM) trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The KPR, a remnant arc of the active IBM system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west Philippine Sea Plate: the subduction zone here is characterized by the Kyushu-Palau Ridge (KPR) subducting beneath the Kyushu Arc, Fig. \ref{pic1} (Cao et al. 2014). 
 
 A set of geodynamic processes including subduction-interface rheology, phase-transition buoyancy, slab stagnation, rollback of mantle and ridge-push effects, cause significant trench motion of the IBM detected as advance by global plate-motion observations (Cížková, H., Bina, 2015). 
 
 \section{Materials and Methods}
 \subsection{Seismic mapping}
 
-Focal mechanisms (Fig. 2) were drawn using 'psmeca' module of Generic Mapping Tools (GMT) that reads dataset values from ASCII file and generates a PostScript code plotting focal mechanisms. Focal mechanisms depict a commonly accepted theory of the focal depths of the earthquake, showing a depth from the surface to the earthquake's origin (a.k.a. hypocenter). Given dataset contains significant amount of shallow earthquakes of the PSB with focal depths of several tens km (mostly $<50$), intermediate earthquakes with focal depths from 70 to 200 km, and also a few earthquakes of PSB with deep focus reaching depths $> 500$ km, Table tab:1. The foci of the most PSB earthquakes are concentrated in the crust and upper mantle, that is, originate in shallow parts of the Earth's interior.
+Focal mechanisms (Fig. \ref{pic2}) were drawn using 'psmeca' module of Generic Mapping Tools (GMT) that reads dataset values from ASCII file and generates a PostScript code plotting focal mechanisms. Focal mechanisms depict a commonly accepted theory of the focal depths of the earthquake, showing a depth from the surface to the earthquake's origin (a.k.a. hypocenter). Given dataset contains significant amount of shallow earthquakes of the PSB with focal depths of several tens km (mostly $<50$), intermediate earthquakes with focal depths from 70 to 200 km, and also a few earthquakes of PSB with deep focus reaching depths $> 500$ km, Table tab:1. The foci of the most PSB earthquakes are concentrated in the crust and upper mantle, that is, originate in shallow parts of the Earth's interior.
 
 The original dataset of the focal mechanism solutions are from the was taken from the Global CMT Catalog, formerly known as the Harvard CMT catalog (Ekström et al. 2012). Technical parameters are set up as following: 
 \begin{enumerate}\itemsep -0.5em 
@@ -45,9 +53,16 @@ The original dataset of the focal mechanism solutions are from the was taken fro
   \item Body wave magnitude (Mb): $<10$;  
   \item Data time span: 1976-2010
  \end{enumerate}
-	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table 1 and Table 2 used for mapping velocity (Fig. 4), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes (Müller, 2001). Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
+	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table 1 and Table 2 used for mapping velocity (Fig. \ref{pic4}), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes (Müller, 2001). Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
 	$MS=log10(A/T)+1.66log10(D)+3.30$,
 where T is the measured wave period and D is the distance in radians. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig2.jpg}
+\caption{Seismic map of the focal mechanisms: PSB margins. Centroid moment tensor solutions for shallow depth earthquakes of Mw <10 along the PSB margins from 1976 to 2010. Earthquakes along the tectonic plate subduction zone are shown by GMT. Data from Global CMT Project. Source: author. }
+\label{pic2}
+\end{figure}
 	
 	On the contrary, earthquakes occurring deep in the Earth do not generate large surface waves. Therefore, a body wave magnitude (Mb) is scaled based on the seismic waves penetrating through the Earth's interior (body) (Müller, 2001). Body wave magnitude (mb) is measured based on the maximum amplitude A by formula:
 	$Mb=log10(A/T)+Q(D,h)$,
@@ -55,11 +70,11 @@ where T is the measured wave period and Q is an empirical function of focal dept
 	
 	Moment magnitude (MW) relies on an underlying robust physical and mathematical development through converting seismic moment using a formula calibrated to agree with MS over much of its range. Others parameters are taken as default ones. Data are collected in both GMT 'psvelomeca' and GMT 'psmeca' input formats and tested. Final solution was for GMT 'psmeca' (the reason is for the GMT version 5.4.5 compatibility). The focal mechanisms are derived from a solution of the earthquakes' moment tensor, which is estimated by an analysis of the observed seismic waveforms. 
 	
-	Technically, seismic moment tensor (Harvard CMT, with zero trace) was plotted (Fig. 2) by 'psmeca' module using the following GMT code snippet: $gmt psmeca -R CMT.txt -J -Sd0.5/8/u -Gred -L0.1p -Fa/5p/it -Fepurple -Fgmagenta -Ft -W0.1p -Fz -Ewhite -O -K >> \$ps$.
+	Technically, seismic moment tensor (Harvard CMT, with zero trace) was plotted (Fig. \ref{pic2}) by 'psmeca' module using the following GMT code snippet: $gmt psmeca -R CMT.txt -J -Sd0.5/8/u -Gred -L0.1p -Fa/5p/it -Fepurple -Fgmagenta -Ft -W0.1p -Fz -Ewhite -O -K >> \$ps$.
 	
 	The scale (0.5) was adjusted to the scaling of the 'beach ball' radius, which is proportional to the magnitude. Here the '-Sd0.5/8/u' implies the scale, label size and annotation placement below the 'beach ball'. Filling of the extensive quadrants was defined by -E parameter; -L parameter defines drawing the 'beach ball' outline of 0.1 pt. Shaded compressional quadrants of the focal mechanism 'beach ball' are colored by -Gred function. The -Fa/5p/it option was used to plot size, P\_axis\_symbol and T\_axis\_symbol, to compute and plot P and T axes with symbols (here: selected inverse triangle (i) and triangle (t), respectively). 
 	
-	Focal mechanisms (Fig. 2) visualized as commonly accepted in geophysical mapping 'beachballs' show a representation of the lower half of the focal sphere as viewed from above the focus at the earthquake epicenter and respective zones of compression and dilatation. Based on the recorded P-waves dataset, a graphical model shows red areas of the 'beachballs' as upward moving, i.e. compressional motion, while white areas – a downward, dilatational motion. Determining geological information, such as rupture of the Earth's surface, it depicts two nodal planes, fault and auxiliary ones. For instance, auxiliary plane intersects the line of fault plane between the circle and its center of the 'beachball' with the general rule that the closer the intersection is to the center, the more dominant is the strike slip. Increase of the curvature of the crossing hemispheres denotes shallower dip.
+	Focal mechanisms (Fig. \ref{pic2}) visualised as commonly accepted in geophysical mapping 'beachballs' show a representation of the lower half of the focal sphere as viewed from above the focus at the earthquake epicenter and respective zones of compression and dilatation. Based on the recorded P-waves dataset, a graphical model shows red areas of the 'beachballs' as upward moving, i.e. compressional motion, while white areas – a downward, dilatational motion. Determining geological information, such as rupture of the Earth's surface, it depicts two nodal planes, fault and auxiliary ones. For instance, auxiliary plane intersects the line of fault plane between the circle and its center of the 'beachball' with the general rule that the closer the intersection is to the center, the more dominant is the strike slip. Increase of the curvature of the crossing hemispheres denotes shallower dip.
 	
 	 The strike of a nodal plane is measured in degrees around the circle from north to the line of the nodal plane. Based on existing classification (Müller, 2001), various focal plane solutions are shown as follows: \begin{itemize}\itemsep -0.5em 
   \item normal fault striking north, dipping E/W at ca. 45°
@@ -68,24 +83,60 @@ where T is the measured wave period and Q is an empirical function of focal dept
   \item oblique fault, strike slip dominant, attitude ca. N° 40W / 70° W (right/left lateral), or N35° E / 70° E (left/right lateral)
  \end{itemize}
      
-	The geoid model was plotted based on EGM-2008 grid at PSB margins using geophysical data by Pavlis et al. (2008) and visualised in GMT, Fig. 3. The earthquakes event map at PSB area (Fig. 5) shows prime hypocentres and magnitude values by colour and size of the circles, respectively. The map was plotted on the basis of International Seismological Centre (ISC-EHB) Bulletin and overplayed on the Google Earth map as a file in Keyhole Markup language Zipped (KMZ), which is a file extension for a placemark file used by Google Earth. The geographic coordinates include x, y, z components in decimal degree defined by the WGS84. The overlay is plotted on Fig. 5.
+The geoid model was plotted based on EGM-2008 grid at PSB margins using geophysical data by Pavlis et al. (2008) and visualised in GMT, Fig. \ref{pic3}. 
+	
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig3.jpg}
+\caption{Geoid model based on EGM-2008 grid at PSB margins. Data:  Pavlis et al. 2008. Mapping: GMT. Source: author. }
+\label{pic3}
+\end{figure}
+	
+The earthquakes event map at PSB area (Fig. \ref{pic5}) shows prime hypocentres and magnitude values by colour and size of the circles, respectively. The map was plotted on the basis of International Seismological Centre (ISC-EHB) Bulletin and overplayed on the Google Earth map as a file in Keyhole Markup language Zipped (KMZ), which is a file extension for a placemark file used by Google Earth. The geographic coordinates include x, y, z components in decimal degree defined by the WGS84. The overlay is plotted on Fig. \ref{pic5}.
 	
 \subsection{Velocity mapping}	
-	Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a PSB region were plotted using 'psvelo' module of GMT (Wessel \& Smith, 1998). Theoretical background of the best-fitting angular velocities and Mid-Ocean Ridge VELocity (MORVEL) is presented by DeMets et al. (2010) who described and modeled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include Pacific VELocity (PVEL) (Sella et al. 2002). Technical visualization of the velocity map (Fig. 4) was performed using following GMT code snippet: 
+	Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a PSB region were plotted using 'psvelo' module of GMT (Wessel \& Smith, 1998). Theoretical background of the best-fitting angular velocities and Mid-Ocean Ridge VELocity (MORVEL) is presented by DeMets et al. (2010) who described and modeled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include Pacific VELocity (PVEL) (Sella et al. 2002). Technical visualization of the velocity map (Fig. \ref{pic4}) was performed using following GMT code snippet: 
 
 \begin{itemize}\itemsep -0.5em 
   \item Velocity ellipses in (N,E) convention: $gmt psvelo CMT.txt -R -J -W0.3p,green -L -Ggreen -Se0.1/0.95/5 -A0.2p -O -K >> ps.$ Here, the Vscale gives the scaling of the velocity in inches; the CMT.txt is the dataset; parameters -R and -J indicate the region (in this case coordinates: -R120/152/4/35)
    \item Velocity ellipses in rotated convention: $gmt psvelo CMT.txt -R -J -W0.3p,red -Sr0.1/0.95/5 -Ggreen -A0.2p -O -K >> ps.$ Here the 'Sr0.1/0.95/5' is the main kwargs showing the Vscale (0.1 inch), Confidence (0.95) and Fontsize (5pt).
-   \item Rotational wedges: $gmt psvelo CMT.txt -R -J -W0.05p -L -Sw0.5/1.e7 -D2 -Gslateblue2 -Elightgray -A0.2p -O -K >> ps.$ Here, the '-Sw0.5/1.e7' indicates Rotational wedges with kwargs as Wedge\_scale and Wedge\_mag. The '-D2' parameter enables to rescale the uncertainties of velocities by sigma\_scale (in this case 2 scale was set up). 
+   \item Rotational wedges: $gmt psvelo CMT.txt -R -J -W0.05p -L -Sw0.5/1.e7 -D2 -Gslateblue2 -Elightgray -A0.2p -O -K >> ps.$ Here, the '-Sw0.5/1.e7' indicates Rotational wedges with kwargs as $Wedge\_scale$ and Wedge\_mag. The '-D2' parameter enables to rescale the uncertainties of velocities by $sigma\_scale$ (in this case 2 scale was set up). 
  \end{itemize}
 	
-	The respective red and green circles with confidence ellipses are PVEL dataset estimates, which use a plate circuit to estimate subduction across the plate subduction zones in the west Pacific. According to DeMets et al. (1990), relative to the Philippine Sea plate, the Pacific plate rotates counter-clockwise around a pole near the southern end of the plate boundary. The best-fitting angular velocity indicates rapid decrease of the convergence rates southward, from 49\pm 0.7 mm yr-1 (1\sigma)  at the northern end of the Izu-Bonin trench to 9\pm 0.8 mm yr-1 of orthogonal subduction along the southern Yap trench, south off Mariana Trench (DeMets et al. 2010).
+The respective red and green circles with confidence ellipses are PVEL dataset estimates, which use a plate circuit to estimate subduction across the plate subduction zones in the west Pacific. According to DeMets et al. (1990), relative to the Philippine Sea plate, the Pacific plate rotates counter-clockwise around a pole near the southern end of the plate boundary. The best-fitting angular velocity indicates rapid decrease of the convergence rates southward, from $49 pm 0.7 mm yr^{-1} (1\sigma)$ at the northern end of the Izu-Bonin trench to 9 pm 0.8 mm $yr^-1$ of orthogonal subduction along the southern Yap trench, south off Mariana Trench (DeMets et al. 2010).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig4.jpg}
+\caption{Velocity ellipses at PSB margins from 1976 to 2010 in (N, E) convention (green) and rotated convention (red).  Rotational wedges (purple 'gear wheels'): by 'psvelo' module of GMT. Data: Global Centroid-Moment-Tensor (CMT) Project. Contour: GEBCO grid. Source: author. }
+\label{pic4}
+\end{figure}
 	
-	The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and 2° along the lithospheric plate boundary (Sella et al. 2002), which reflects the overlap in the GPS stations used to estimate the motions of the two plates. The existence of the Caroline plate was first proposed by Weissel & Anderson (1978), who estimated its motions from a synthesis of marine seismic, bathymetric, and seismologic observations from its boundaries with the Pacific and Philippine plates. Located in the western equatorial Pacific immediately south of the PSP (Fig. 1), it remains the poorly understood and enigmatic with uncertainties about the style and rate of its present deformation caused by scarcity of reliable kinematic data.
-	
+The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and 2° along the lithospheric plate boundary (Sella et al. 2002), which reflects the overlap in the GPS stations used to estimate the motions of the two plates. The existence of the Caroline plate was first proposed by Weissel \& Anderson (1978), who estimated its motions from a synthesis of marine seismic, bathymetric, and seismologic observations from its boundaries with the Pacific and Philippine plates. Located in the western equatorial Pacific immediately south of the PSP (Fig. \ref{pic1}), it remains the poorly understood and enigmatic with uncertainties about the style and rate of its present deformation caused by scarcity of reliable kinematic data.
 	
 \section{Results}
 	
+	Seismic phenomena is the PSB (Fig. \ref{pic2}) can be explained as the result of tectonic processes at the edges of the lithospheric plates that spread apart at the ocean ridges along the large strike-slip faults and converge at the hot and weak volcanic island arcs of IBM and the Philippines. Seismicity map (Fig. \ref{pic2}) in the PSB area shows that most earthquakes are confined to the marginal areas presenting a narrow, continuous belts around large stable areas of the PSP. The activity differs by divergence and convergence zones being moderate in the zones of plate divergence and including deep shocks at shallow depths in the zones of plate convergence. Seismic data on focal mechanisms are presented at CMT catalogue which gives a relative direction of tectonic plates motion throughout active belts. Focal mechanisms point at relative motions of the lithosphere plates determined from magnetic and topographic data associated with the zones of plate divergence.
+	
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig5.jpg}
+\caption{Earthquakes event map at PSB area: prime hypocentres and magnitude values. Data source: http://www.isc.ac.uk/isc-ehb/search/catalogue/ ISC-EHB Bulletin. Circle size shows magnitude values. Circle color shows hypocenter depths, km (from red: 0 to dark blue/black: >600). Cartographic overlay of .kmz data: Google Earth Pro. Source: author.}
+\label{pic5}
+\end{figure}
+	
+A phenomena of the deep-sea trench includes its migration that depends primarily on the age at the trench (Faccenna et al. 2009; Gutscher et al. 2016): located on the place of the subduction plate boundary at a given time, the trench may change its location over time as a result of the complex processes of the global plate tectonics. As proved by Lallemand et al. (2008), trench migration and hence, geomorphic fluctuations, depends on the lower plate parameters and controlled by the subducting plate velocity $V_{sub}$.
+	
+	Philippine Sea Basin is marked by the complex interaction of three lithospheric plates: Eurasian, Australian and the PSP, which includes collision, subduction and accretion. Old, heavy and large ($103,300,000 km^2$) Pacific plate plays the major role comparing to the Australian Plate ($47,000,000 km^2$) and the PSP $5,500,000 km^2$ (Alden, 2019). The morphology of the Pacific plate has a low dip angle at shallow depths. The PSP, a large and tectonically complex region of the western Pacific located between the Pacific, Eurasian and Australian plates, is the world’s largest marginal basin plate (Sdrolias et al. 2004). The PSP has two back-arc basins formed in Oligocene to Miocene period: Parece Vela and Shikoku Basins (Fig. \ref{pic1}). 
+	
+	Slab dynamics is one of the important driving forces for the trench formation affecting the mechanisms of its migration (retreat or advance). It is therefore crucial to characterize the origin of the subducting slab morphology in the deep mantle identifying the features of subduction zones, which are among the fundamental issues of solid Earth (Yoshida, 2017). Effects of slab mineralogy and phase chemistry on the subduction dynamics (buoyancy, stress field), kinematics (rate of subduction and plate motion), elasticity (deformation and seismic wave speed), thermometry (effects of latent heat, isobaric superheating) and seismicity (adiabatic shear instabilities) are discussed previously (Bina et al. 2001). 
+
+\section{Conclusion}
+The datasets were combined with multi-source grids explained in detailed. A multi-source dataset applied in this research includes a compilation of GEBCO, ETOPO1, ETOPO5, CMT, EGM96, GVP and Global Self-consistent Hierarchical High-resolution Geography Database (GSHHGD) sources. Combined studies of seismic and tectonic settings (focal mechanism, velocity, geological lineaments), volcanic activity and general topography of the ocean seafloor are essential for understanding the complicated bathymetry and geomorphic patterns of the trenches in the Philippine Sea Basin. In this paper, a multi-source GIS data analyze on the southern side of the Philippine Sea Basin and discussion of the current situation and historical evolution of the geology of this area was performed and presented. 
+
+	Research novelty of the presented research consists in the multi-source data analysis applied for geophysical analysis of the current situation representing seismicity of the region, and earthquake locations, magnitude and distribution by intensity via the GMT modules. A combination of the geophysical visualization, geological analysis and GMT based mapping of the Philippine Sea margins does not present in the existing literature. Practical novelty of the work consists in the tested methodology of the GMT-based geophysical data visualization. In contrast to the classic cartographic approaches having GUI, e.g. ArcGIS ESRI based, in geodata visualization and mapping (Gauger et al. 2007; Gohl et al. 2006a, 2006b; Lemenkova, 2011;  Kuhn et al. 2006; Suetova et al. 2005a, 2005b; Klaučo et al. 2017, 2013; Lemenkova et al. 2012), or statistical approaches (Lemenkova, 2019e, 2019f), GMT is notable for its scripting algorithms as a core conceptual methodology. 
+	
+	Semi-automated methods of cartographic digitizing presented previously (Schenke \& Lemenkova, 2008) was driven by the developed algorithms of the machine learning (ML). Application of the scripting in the cartographic routine, minimizes handmade routine and subjectivity in mapping and increases overall precision of the data processing and visualization accuracy. GMT proposes more advanced solution in the automatization through ML based mapping that results in a high quality cartographic mapping (Lemenkova, 2020a, 2020b, 2020c, 2020d, 2020e). Specifically, among other modules, 'psmeca', 'psvelo' were tested in the current work for seismic mapping and plotting earthquakes focal mechanisms as demonstrated in this paper. 
 	
 
 \begin{acknowledgement}
