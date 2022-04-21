@@ -44,7 +44,14 @@ A set of geodynamic processes including subduction-interface rheology, phase-tra
 \section{Materials and Methods}
 \subsection{Seismic mapping}
 
-Focal mechanisms (Fig. \ref{pic2}) were drawn using 'psmeca' module of Generic Mapping Tools (GMT) that reads dataset values from ASCII file and generates a PostScript code plotting focal mechanisms. Focal mechanisms depict a commonly accepted theory of the focal depths of the earthquake, showing a depth from the surface to the earthquake's origin (a.k.a. hypocenter). Given dataset contains significant amount of shallow earthquakes of the PSB with focal depths of several tens km (mostly $<50$), intermediate earthquakes with focal depths from 70 to 200 km, and also a few earthquakes of PSB with deep focus reaching depths $> 500$ km, Table tab:1. The foci of the most PSB earthquakes are concentrated in the crust and upper mantle, that is, originate in shallow parts of the Earth's interior.
+Focal mechanisms (Fig. \ref{pic2}) were drawn using 'psmeca' module of Generic Mapping Tools (GMT) that reads dataset values from ASCII file and generates a PostScript code plotting focal mechanisms. Focal mechanisms depict a commonly accepted theory of the focal depths of the earthquake, showing a depth from the surface to the earthquake's origin (a.k.a. hypocenter). Given dataset contains significant amount of shallow earthquakes of the PSB with focal depths of several tens km (mostly $<50$), intermediate earthquakes with focal depths from 70 to 200 km, and also a few earthquakes of PSB with deep focus reaching depths $> 500$ km, Table \ref{tab1}. The foci of the most PSB earthquakes are concentrated in the crust and upper mantle, that is, originate in shallow parts of the Earth's interior.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{Tab1.jpg}
+\caption{Earthquake events for 1976/1977}
+\label{tab1}
+\end{figure}
 
 The original dataset of the focal mechanism solutions are from the was taken from the Global CMT Catalog, formerly known as the Harvard CMT catalog (Ekström et al. 2012). Technical parameters are set up as following: 
 \begin{enumerate}\itemsep -0.5em 
@@ -53,26 +60,34 @@ The original dataset of the focal mechanism solutions are from the was taken fro
   \item Body wave magnitude (Mb): $<10$;  
   \item Data time span: 1976-2010
  \end{enumerate}
-	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table 1 and Table 2 used for mapping velocity (Fig. \ref{pic4}), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes (Müller, 2001). Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
+ 
+	While magnitude is a widely understood concept, describing the energy of the earthquake release on a logarithmic scale, some technical details are presented in Table \ref{tab1} and Table \ref{tab2} used for mapping velocity (Fig. \ref{pic4}), assigning and interpreting magnitudes. Introduced in the 1930's, the Richter Scale is the best known scale for measuring the magnitude of earthquakes (Müller, 2001). Surface wave magnitude (Ms), creating the strongest disturbance within the upper layers of the Earth, is computed by the following algebraic formula:
 	$MS=log10(A/T)+1.66log10(D)+3.30$,
 where T is the measured wave period and D is the distance in radians. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{Fig2.jpg}
-\caption{Seismic map of the focal mechanisms: PSB margins. Centroid moment tensor solutions for shallow depth earthquakes of Mw <10 along the PSB margins from 1976 to 2010. Earthquakes along the tectonic plate subduction zone are shown by GMT. Data from Global CMT Project. Source: author. }
-\label{pic2}
-\end{figure}
 	
 	On the contrary, earthquakes occurring deep in the Earth do not generate large surface waves. Therefore, a body wave magnitude (Mb) is scaled based on the seismic waves penetrating through the Earth's interior (body) (Müller, 2001). Body wave magnitude (mb) is measured based on the maximum amplitude A by formula:
 	$Mb=log10(A/T)+Q(D,h)$,
 where T is the measured wave period and Q is an empirical function of focal depth h and epicentral distance D.
 	
 	Moment magnitude (MW) relies on an underlying robust physical and mathematical development through converting seismic moment using a formula calibrated to agree with MS over much of its range. Others parameters are taken as default ones. Data are collected in both GMT 'psvelomeca' and GMT 'psmeca' input formats and tested. Final solution was for GMT 'psmeca' (the reason is for the GMT version 5.4.5 compatibility). The focal mechanisms are derived from a solution of the earthquakes' moment tensor, which is estimated by an analysis of the observed seismic waveforms. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig2.jpg}
+\caption{Seismic map of the focal mechanisms: PSB margins. Centroid moment tensor solutions for shallow depth earthquakes of $Mw <10$ along the PSB margins from 1976 to 2010. Earthquakes along the tectonic plate subduction zone are shown by GMT. Data from Global CMT Project. Source: author.}
+\label{pic2}
+\end{figure}
 	
 	Technically, seismic moment tensor (Harvard CMT, with zero trace) was plotted (Fig. \ref{pic2}) by 'psmeca' module using the following GMT code snippet: $gmt psmeca -R CMT.txt -J -Sd0.5/8/u -Gred -L0.1p -Fa/5p/it -Fepurple -Fgmagenta -Ft -W0.1p -Fz -Ewhite -O -K >> \$ps$.
 	
 	The scale (0.5) was adjusted to the scaling of the 'beach ball' radius, which is proportional to the magnitude. Here the '-Sd0.5/8/u' implies the scale, label size and annotation placement below the 'beach ball'. Filling of the extensive quadrants was defined by -E parameter; -L parameter defines drawing the 'beach ball' outline of 0.1 pt. Shaded compressional quadrants of the focal mechanism 'beach ball' are colored by -Gred function. The -Fa/5p/it option was used to plot size, P\_axis\_symbol and T\_axis\_symbol, to compute and plot P and T axes with symbols (here: selected inverse triangle (i) and triangle (t), respectively). 
+	
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{Tab2.jpg}
+\caption{Magnitude and Moment Tensor for the region of the Philippine Sea basin}
+\label{tab2}
+\end{figure}
 	
 	Focal mechanisms (Fig. \ref{pic2}) visualised as commonly accepted in geophysical mapping 'beachballs' show a representation of the lower half of the focal sphere as viewed from above the focus at the earthquake epicenter and respective zones of compression and dilatation. Based on the recorded P-waves dataset, a graphical model shows red areas of the 'beachballs' as upward moving, i.e. compressional motion, while white areas – a downward, dilatational motion. Determining geological information, such as rupture of the Earth's surface, it depicts two nodal planes, fault and auxiliary ones. For instance, auxiliary plane intersects the line of fault plane between the circle and its center of the 'beachball' with the general rule that the closer the intersection is to the center, the more dominant is the strike slip. Increase of the curvature of the crossing hemispheres denotes shallower dip.
 	
@@ -116,7 +131,7 @@ The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and
 	
 \section{Results}
 	
-	Seismic phenomena is the PSB (Fig. \ref{pic2}) can be explained as the result of tectonic processes at the edges of the lithospheric plates that spread apart at the ocean ridges along the large strike-slip faults and converge at the hot and weak volcanic island arcs of IBM and the Philippines. Seismicity map (Fig. \ref{pic2}) in the PSB area shows that most earthquakes are confined to the marginal areas presenting a narrow, continuous belts around large stable areas of the PSP. The activity differs by divergence and convergence zones being moderate in the zones of plate divergence and including deep shocks at shallow depths in the zones of plate convergence. Seismic data on focal mechanisms are presented at CMT catalogue which gives a relative direction of tectonic plates motion throughout active belts. Focal mechanisms point at relative motions of the lithosphere plates determined from magnetic and topographic data associated with the zones of plate divergence.
+	Seismic phenomena is the PSB (Fig. \ref{pic2}) can be explained as the result of tectonic processes at the edges of the lithospheric plates that spread apart at the ocean ridges along the large strike-slip faults and converge at the hot and weak volcanic island arcs of IBM and the Philippines. Seismicity map (Fig. \ref{pic2}) in the PSB area shows that most earthquakes are confined to the marginal areas presenting a narrow, continuous belts around large stable areas of the PSP. 
 	
 \begin{figure}[H]
 \centering
@@ -124,12 +139,14 @@ The PSP-Pacific plate velocities are estimated to fit the interval 1 mm yr-1 and
 \caption{Earthquakes event map at PSB area: prime hypocentres and magnitude values. Data source: http://www.isc.ac.uk/isc-ehb/search/catalogue/ ISC-EHB Bulletin. Circle size shows magnitude values. Circle color shows hypocenter depths, km (from red: 0 to dark blue/black: >600). Cartographic overlay of .kmz data: Google Earth Pro. Source: author.}
 \label{pic5}
 \end{figure}
-	
+
+The activity differs by divergence and convergence zones being moderate in the zones of plate divergence and including deep shocks at shallow depths in the zones of plate convergence. Seismic data on focal mechanisms are presented at CMT catalogue which gives a relative direction of tectonic plates motion throughout active belts. Focal mechanisms point at relative motions of the lithosphere plates determined from magnetic and topographic data associated with the zones of plate divergence.
+
 A phenomena of the deep-sea trench includes its migration that depends primarily on the age at the trench (Faccenna et al. 2009; Gutscher et al. 2016): located on the place of the subduction plate boundary at a given time, the trench may change its location over time as a result of the complex processes of the global plate tectonics. As proved by Lallemand et al. (2008), trench migration and hence, geomorphic fluctuations, depends on the lower plate parameters and controlled by the subducting plate velocity $V_{sub}$.
 	
-	Philippine Sea Basin is marked by the complex interaction of three lithospheric plates: Eurasian, Australian and the PSP, which includes collision, subduction and accretion. Old, heavy and large ($103,300,000 km^2$) Pacific plate plays the major role comparing to the Australian Plate ($47,000,000 km^2$) and the PSP $5,500,000 km^2$ (Alden, 2019). The morphology of the Pacific plate has a low dip angle at shallow depths. The PSP, a large and tectonically complex region of the western Pacific located between the Pacific, Eurasian and Australian plates, is the world’s largest marginal basin plate (Sdrolias et al. 2004). The PSP has two back-arc basins formed in Oligocene to Miocene period: Parece Vela and Shikoku Basins (Fig. \ref{pic1}). 
+Philippine Sea Basin is marked by the complex interaction of three lithospheric plates: Eurasian, Australian and the PSP, which includes collision, subduction and accretion. Old, heavy and large ($103,300,000 km^2$) Pacific plate plays the major role comparing to the Australian Plate ($47,000,000 km^2$) and the PSP $5,500,000 km^2$ (Alden, 2019). The morphology of the Pacific plate has a low dip angle at shallow depths. The PSP, a large and tectonically complex region of the western Pacific located between the Pacific, Eurasian and Australian plates, is the world’s largest marginal basin plate (Sdrolias et al. 2004). The PSP has two back-arc basins formed in Oligocene to Miocene period: Parece Vela and Shikoku Basins (Fig. \ref{pic1}). 
 	
-	Slab dynamics is one of the important driving forces for the trench formation affecting the mechanisms of its migration (retreat or advance). It is therefore crucial to characterize the origin of the subducting slab morphology in the deep mantle identifying the features of subduction zones, which are among the fundamental issues of solid Earth (Yoshida, 2017). Effects of slab mineralogy and phase chemistry on the subduction dynamics (buoyancy, stress field), kinematics (rate of subduction and plate motion), elasticity (deformation and seismic wave speed), thermometry (effects of latent heat, isobaric superheating) and seismicity (adiabatic shear instabilities) are discussed previously (Bina et al. 2001). 
+Slab dynamics is one of the important driving forces for the trench formation affecting the mechanisms of its migration (retreat or advance). It is therefore crucial to characterize the origin of the subducting slab morphology in the deep mantle identifying the features of subduction zones, which are among the fundamental issues of solid Earth (Yoshida, 2017). Effects of slab mineralogy and phase chemistry on the subduction dynamics (buoyancy, stress field), kinematics (rate of subduction and plate motion), elasticity (deformation and seismic wave speed), thermometry (effects of latent heat, isobaric superheating) and seismicity (adiabatic shear instabilities) are discussed previously (Bina et al. 2001). 
 
 \section{Conclusion}
 The datasets were combined with multi-source grids explained in detailed. A multi-source dataset applied in this research includes a compilation of GEBCO, ETOPO1, ETOPO5, CMT, EGM96, GVP and Global Self-consistent Hierarchical High-resolution Geography Database (GSHHGD) sources. Combined studies of seismic and tectonic settings (focal mechanism, velocity, geological lineaments), volcanic activity and general topography of the ocean seafloor are essential for understanding the complicated bathymetry and geomorphic patterns of the trenches in the Philippine Sea Basin. In this paper, a multi-source GIS data analyze on the southern side of the Philippine Sea Basin and discussion of the current situation and historical evolution of the geology of this area was performed and presented. 
@@ -159,11 +176,6 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 \bibitem{pagelayout} P. van Oostrum, ``\textit{Page Layout in \LaTeX}'' (\texttt{\small http://www.cs.ruu.nl/people/piet})
 \bibitem{web1}A. J. Hildebrand, \texttt{\small http://www.math.uiuc.edu/\~{}hildebr/tex/}
 \bibitem{web2} \texttt{\small http://zoonek.free.fr/LaTeX/}
-\bibitem{web3} \texttt{\small http://amath.colorado.edu/documentation/LaTeX}
-\bibitem{web4} \texttt{\small http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/}
-\bibitem{web5} \texttt{\small http://latex.computersci.org/}
-\bibitem{web6} S. Kottwitz, \texttt{\small http://texblog.net/}
-\bibitem{web7} \texttt{\small http://www.personal.ceu.hu/tex/}
 \bibitem{web8} The UK \TeX Archive: \texttt{\small http://www.tex.ac.uk/}
 \bibitem{stacko} Stack Overflow: \texttt{\small http://stackoverflow.com/tags}
 \bibitem{amsug} User's Guide for the \textit{amsmath} Package: \texttt{\small ftp://ftp.ams.org/pub/tex/doc /amsmath `/amsldoc.pdf}
