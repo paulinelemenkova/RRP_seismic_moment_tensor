@@ -138,11 +138,11 @@ This paper presents a GMT scripting technique for mapping seismic moment tensor 
 \section{Introduction}
 
 \subsection{Background}
-This paper addresses the problem of cartographic data processing for geophysical mapping of seismically active regions of the seafloor located on the borders of the tectonic plates. Subducting lithosphere plates results in complex processes that include formation of the oceanic and repetitive submarine earthquakes \cite{, , ,}. Mapping the tectonically unstable margins of the tectonic plates of the Pacific Ocean is critical for understanding marine geophysical processes \cite{, , , }. Regional geomorphology of the seafloor is formed certain geologic-geophysical interactions which typically develop under the influence of particular tectonic and geodynamic setting.
+This paper addresses the problem of cartographic data handling for geophysical mapping. The study area includes seismically active region of the seafloor located on the borders of the tectonic plates in the \ac{psb} located in the west Pacific Ocean. Subducting lithosphere plates activate complex processes along their margins that include, among others, the formation of the oceanic trenches, high seismicity and associated repetitive submarine earthquakes \cite{, , ,}. Mapping such tectonically unstable regions is critical for our understanding of the marine geophysical processes \cite{, , , }. Regional geomorphology of the seafloor is formed certain geologic-geophysical interactions which typically develop under the influence of particular tectonic and geodynamic setting.
 
 Advances in programming languages made an application of scripting in cartography become real: using programming codes for generating maps from a console in a semi-automated regime. Using scripting techniques is beneficial for geophysical studies from rapid and accurate data processing. For instance, in the analysis of large seismic datasets with complex multi-column tables, the capability of machine-based executing script is highly desirable for quick data visualisation and analysis. Specifically for marine geophysics, it is necessary to use the advanced cartographic tools that can be used for mapping seismic data in advance of any potential risk of geologic activities and help preventing natural hazards, such as earthquakes and tsunamis.
 
-Although seismic mapping and prediction of geophysical hazards is quite an important problem in studies of physics of the Earth, using scripting techniques remains a novel method for the domain of marine geophysics where state-of-the-art software such as GIS is traditionally used. This work proposes a scripting cartographic framework based on using the \ac{gmt}, which has a modular structure enabling cartographic elements to be plotted from the console. In order to enable the repeatability of the methods and to test the efficacy of the workflow, the most important fragments of scripts are presented with the full access to the codes provided using the GitHub repository of the author. 
+Although seismic mapping and prediction of geophysical hazards is quite an important problem in studies of physics of the Earth, using cartographic scripting techniques remains a novel method for the domain of marine geophysics where state-of-the-art software such as GIS is traditionally used. This work proposes a scripting cartographic framework based on using the \ac{gmt}, which has a modular structure enabling cartographic elements to be plotted from the console. In order to enable the repeatability of the methods and to test the efficacy of the workflow, the most important fragments of scripts are presented with the full access to the codes provided using the GitHub repository of the author. 
 
 Specifically, this paper proposes a novel approach for accurate and rapid cartographic visualisation of the geophysical data aimed at visualising seismic parameters reflecting complex geophysical activities in the west region of the Pacific Ocean: the \ac{psb}. Advanced cartographic visualisation helps discovering the casual relationships between constituent geophysical and geological processes reflected in predicted seismic characteristics in the given region of the seafloor. the key of the scripting approach in cartography is to utilise the modules of \ac{gmt} for plotting cartographic units, structures and elements on the map. It is thus possible to make the use of modules for automated mapping through the templates for subsequent maps in a series, which optimises mapping workflow through automation. 
 
@@ -154,16 +154,14 @@ Earlier studies on the marine geophysical mapping highlighted the relationship b
 
 Geomorphological evolution of the seafloor is largely controlled by a variety of factors including geological settings and tectonic plate dynamics \cite{Fujioka2002,Gong,Lemenkova2019a,Lemenkova2021a}, geophysical processes \cite{Seekings,Hall1995a,Ogawa}, submarine volcanism and seismicity se\cite{Ozawa,Lemenkova2020g,Lemenkova2021e}. Mapping geological structure and visualising geophysical setting is a basic methodology for recognition of complex geophysical activities on the seafloor of the Pacific Ocean \cite{ , , , }. These studies extend the types and strength of geological processes, including seismicity, that can be better understood by cartographic data visualisation.
 
+Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the  trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The \ac{kpr}, a remnant arc of the active \ac{ibm} system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west \ac{psp}: the subduction zone here is characterised by the  subducting beneath the Kyushu Arc, Fig. \ref{pic1} \cite{Cao}. A set of geodynamic processes including subduction-interface rheology, phase-transition buoyancy, slab stagnation, rollback of mantle and ridge-push effects, cause significant trench motion of the \ac{ibm} detected as advance by global plate-motion observations \cite{Bina,Cizkova}. 
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{Fig1.jpg}
 \caption{Geologic map of the \ac{psb}. Solid red lines indicate boundaries between the lithospheric plates. Yellow fronts denote trench axes. Tectonic slab contours are depicted by the red dashed lines. Green arrows and relevant numbers indicate the convergence rates (mm/year) along the trenches. Magenta triangles denote hydrothermal areas mostly located along the Ryukyu Trench. Source: author.}
 \label{pic1}
 \end{figure}
-
-Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the  trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The \ac{kpr}, a remnant arc of the active \ac{ibm} system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west \ac{psp}: the subduction zone here is characterised by the  subducting beneath the Kyushu Arc, Fig. \ref{pic1} \cite{Cao}. 
-
-A set of geodynamic processes including subduction-interface rheology, phase-transition buoyancy, slab stagnation, rollback of mantle and ridge-push effects, cause significant trench motion of the \ac{ibm} detected as advance by global plate-motion observations \cite{Bina,Cizkova}. 
 
 \section{Materials and Methods}
 \subsection{Seismic mapping}
@@ -192,8 +190,6 @@ where T is the measured wave period and D is the distance in radians.
 	On the contrary, earthquakes occurring deep in the Earth do not generate large surface waves. Therefore, the \ac{mb} is scaled based on the seismic waves penetrating through the Earth's interior (body) \cite{Mueller}. The \ac{mb} is measured based on the maximum amplitude A by formula:
 	$Mb=log10(A/T)+Q(D,h)$,
 where T is the measured wave period and Q is an empirical function of focal depth h and epicentral distance D.
-	
-	The \ac{mw} relies on an underlying robust physical and mathematical development through converting seismic moment using a formula calibrated to agree with the \ac{ms} over much of its range. Others parameters are taken as default ones. Data are collected in both \ac{gmt} 'psvelomeca' and \ac{gmt} 'psmeca' input formats and tested. Final solution was for \ac{gmt} 'psmeca' (the reason is for the \ac{gmt} version 5.4.5 compatibility). The focal mechanisms are derived from a solution of the earthquakes' moment tensor, which is estimated by an analysis of the observed seismic waveforms. 
 
 \begin{figure}[H]
 \centering
@@ -201,10 +197,12 @@ where T is the measured wave period and Q is an empirical function of focal dept
 \caption{Seismic map of the focal mechanisms: \ac{psb} margins. The centroid moment tensor solutions for shallow depth earthquakes of $Mw <10$ along the \ac{psb} margins from 1976 to 2010. Earthquakes along the tectonic plate subduction zone are shown by \ac{gmt}. Data from Global \ac{cmt} Project. Source: author.}
 \label{pic2}
 \end{figure}
+		
+The \ac{mw} relies on an underlying robust physical and mathematical development through converting seismic moment using a formula calibrated to agree with the \ac{ms} over much of its range. Others parameters are taken as default ones. Data are collected in both \ac{gmt} 'psvelomeca' and \ac{gmt} 'psmeca' input formats and tested. Final solution was for \ac{gmt} 'psmeca' (the reason is for the \ac{gmt} version 5.4.5 compatibility). The focal mechanisms are derived from a solution of the earthquakes' moment tensor, which is estimated by an analysis of the observed seismic waveforms. 
+
+Technically, seismic moment tensor (Harvard \ac{cmt}, with zero trace) was plotted (Fig. \ref{pic2}) by 'psmeca' module using the following GMT code snippet: $gmt psmeca -R CMT.txt -J -Sd0.5/8/u -Gred -L0.1p -Fa/5p/it -Fepurple -Fgmagenta -Ft -W0.1p -Fz -Ewhite -O -K >> \$ps$.
 	
-	Technically, seismic moment tensor (Harvard \ac{cmt}, with zero trace) was plotted (Fig. \ref{pic2}) by 'psmeca' module using the following GMT code snippet: $gmt psmeca -R CMT.txt -J -Sd0.5/8/u -Gred -L0.1p -Fa/5p/it -Fepurple -Fgmagenta -Ft -W0.1p -Fz -Ewhite -O -K >> \$ps$.
-	
-	The scale (0.5) was adjusted to the scaling of the 'beach ball' radius, which is proportional to the magnitude. Here the '-Sd0.5/8/u' implies the scale, label size and annotation placement below the 'beach ball'. Filling of the extensive quadrants was defined by -E parameter; -L parameter defines drawing the 'beach ball' outline of 0.1 pt. Shaded compressional quadrants of the focal mechanism 'beach ball' are colored by -Gred function. The -Fa/5p/it option was used to plot size, P\_axis\_symbol and T\_axis\_symbol, to compute and plot P and T axes with symbols (here: selected inverse triangle (i) and triangle (t), respectively). 
+The scale (0.5) was adjusted to the scaling of the 'beach ball' radius, which is proportional to the magnitude. Here the '-Sd0.5/8/u' implies the scale, label size and annotation placement below the 'beach ball'. Filling of the extensive quadrants was defined by -E parameter; -L parameter defines drawing the 'beach ball' outline of 0.1 pt. Shaded compressional quadrants of the focal mechanism 'beach ball' are colored by -Gred function. The -Fa/5p/it option was used to plot size, P\_axis\_symbol and T\_axis\_symbol, to compute and plot P and T axes with symbols (here: selected inverse triangle (i) and triangle (t), respectively). 
 	
 \begin{figure}[H]
 \centering
@@ -214,8 +212,15 @@ where T is the measured wave period and Q is an empirical function of focal dept
 \end{figure}
 	
 	Focal mechanisms (Fig. \ref{pic2}) visualised as commonly accepted in geophysical mapping 'beachballs' show a representation of the lower half of the focal sphere as viewed from above the focus at the earthquake epicenter and respective zones of compression and dilatation. Based on the recorded P-waves dataset, a graphical model shows red areas of the 'beachballs' as upward moving, i.e. compressional motion, while white areas – a downward, dilatational motion. Determining geological information, such as rupture of the Earth's surface, it depicts two nodal planes, fault and auxiliary ones. For instance, auxiliary plane intersects the line of fault plane between the circle and its center of the 'beachball' with the general rule that the closer the intersection is to the center, the more dominant is the strike slip. Increase of the curvature of the crossing hemispheres denotes shallower dip.
-	
-	 The strike of a nodal plane is measured in degrees around the circle from north to the line of the nodal plane. Based on existing classification \cite{Mueller}, various focal plane solutions are shown as follows: \begin{itemize}\itemsep -0.5em 
+		
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{Fig3.jpg}
+\caption{Geoid model based on \ac{egm2008} grid at \ac{psb} margins. Data: \cite{Pavlis}. Mapping: GMT. Source: author.}
+\label{pic3}
+\end{figure}
+
+The strike of a nodal plane is measured in degrees around the circle from north to the line of the nodal plane. Based on existing classification \cite{Mueller}, various focal plane solutions are shown as follows: \begin{itemize}\itemsep -0.5em 
   \item normal fault striking north, dipping E/W at ca. 45°
   \item oblique fault, right or left lateral and reverse slip
   \item oblique fault, reverse slip dominant, with some right/left lateral 
@@ -224,17 +229,10 @@ where T is the measured wave period and Q is an empirical function of focal dept
      
 The geoid model was plotted based on \ac{egm96} grid at \ac{psb} margins using geophysical data \cite{Pavlis} and visualised in \ac{gmt}, Fig. \ref{pic3}. 
 	
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{Fig3.jpg}
-\caption{Geoid model based on \ac{egm2008} grid at \ac{psb} margins. Data: \cite{Pavlis}. Mapping: GMT. Source: author. }
-\label{pic3}
-\end{figure}
-	
 The earthquakes event map at \ac{psb} area (Fig. \ref{pic5}) shows prime hypocentres and magnitude values by colour and size of the circles, respectively. The map was plotted on the basis of \ac{isc}-\ac{ehb} Bulletin and overplayed on the Google Earth map as a file in the \ac{kmz} format, which is a file extension for a placemark file used by Google Earth. The geographic coordinates include x, y, z components in decimal degree defined by the \ac{wgs84}. The overlay is plotted on Fig. \ref{pic5}.
 	
 \subsection{Velocity mapping}	
-	Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a \ac{psb} region were plotted using 'psvelo' module of \ac{gmt} \cite{Wessel}. Theoretical background of the best-fitting angular velocities and the \ac{morvel} is presented by \cite{DeMets2010} who described and modelled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include the \ac{pvel} \cite{Sella}. Technical visualisation of the velocity map (Fig. \ref{pic4}) was performed using following \ac{gmt} code snippet: 
+Velocity ellipses with 95\% confidence in rotated convention (red) and in (N, E) convention (green), on a \ac{psb} region were plotted using 'psvelo' module of \ac{gmt} \cite{Wessel}. Theoretical background of the best-fitting angular velocities and the \ac{morvel} is presented by \cite{DeMets2010} who described and modelled geologically current motions of 25 tectonic plates using geologically determined and geodetically constrained subsets of the global circuit. The datasets include the \ac{pvel} \cite{Sella}. Technical visualisation of the velocity map (Fig. \ref{pic4}) was performed using following \ac{gmt} code snippet: 
 
 \begin{itemize}\itemsep -0.5em 
   \item Velocity ellipses in (N,E) convention: $gmt psvelo CMT.txt -R -J -W0.3p,green -L -Ggreen -Se0.1/0.95/5 -A0.2p -O -K >> ps.$ Here, the Vscale gives the scaling of the velocity in inches; the CMT.txt is the dataset; parameters -R and -J indicate the region (in this case coordinates: -R120/152/4/35)
