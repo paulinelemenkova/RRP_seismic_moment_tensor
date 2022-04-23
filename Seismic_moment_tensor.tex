@@ -140,7 +140,7 @@ This paper presents a GMT scripting technique for mapping seismic moment tensor 
 \subsection{Background}
 This paper addresses the problem of cartographic data handling for geophysical mapping. The study area includes seismically active region of the seafloor located on the borders of the tectonic plates in the \ac{psb} located in the west Pacific Ocean. Subducting lithosphere plates activate complex processes along their margins that results in complex seismic activities in the upper mantle and associated repetitive submarine earthquakes \cite{KIMURA200918,TANGYOUBIAO1990219,HORI200685,Uchida}. Mapping such tectonically unstable regions is critical for analysis of the seismicity, as it helps highlighting the relationship among earthquake location and complexity of the marine geophysical processes \cite{ZU2021106800,SACKS19843,IIDAKA201741,LI2020102127}. A lack of knowledge of the topography of the seabed restricts the progress of geophysical investigations of the oceans as well as geological exploration and exploiting mineral resources which might be found in the bed of the ocean \cite{HILL1957129}. This rises a question of developing advanced methods of geophysical mapping.
 
-Advances in programming made an application of scripting in cartographic mapping become real: using programming codes for generating maps from a console in a semi-automated regime \cite{Buetal,Lemenkova2022c,}. Using scripting techniques is beneficial for geophysical studies from rapid and accurate data processing. For instance, in the analysis of large seismic datasets with complex multi-column tables, the capability of machine-based executing script is highly desirable for quick data visualisation and analysis. Specifically for marine geophysics, it is necessary to use the advanced cartographic tools that can be used for mapping seismic data in advance of any potential risk of geologic activities and help preventing natural hazards, such as earthquakes and tsunamis.
+Advances in programming made an application of scripting in cartographic mapping become real: using programming codes for generating maps from a console in a semi-automated regime \cite{Buetal,Lemenkova2022c,6910592}. Using scripting techniques is beneficial for geophysical studies from rapid and accurate data processing. For instance, in the analysis of large seismic datasets with complex multi-column tables, the capability of machine-based executing script is highly desirable for quick data visualisation and analysis \cite{9497221,7951907,7363985}. Specifically for marine geophysics, it is necessary to use the advanced cartographic tools that can be used for mapping seismic data in advance of any potential risk of geologic activities and help preventing natural hazards, such as earthquakes and tsunamis \cite{SUZUKI201690}. 
 
 Although seismic mapping and prediction of geophysical hazards is quite an important problem in studies of physics of the Earth, using cartographic scripting techniques remains a novel method for the domain of marine geophysics where state-of-the-art software such as GIS is traditionally used. This work proposes a scripting cartographic framework based on using the \ac{gmt}, which has a modular structure enabling cartographic elements to be plotted from the console. In order to enable the repeatability of the methods and to test the efficacy of the workflow, the most important fragments of scripts are presented with the full access to the codes provided using the GitHub repository of the author. 
 
@@ -150,9 +150,9 @@ Active use of the machine-based cartographic data processing provides an effecti
 
 \subsection{Related Work}
 
-Earlier studies on the marine geophysical mapping highlighted the relationship between the geomorphic patterns of the deep-sea channels, submarine fans and their topography related to the mid-ocean ridge tectonics, volcanism and dynamics of the Philippine back arc \cite{Menard,Chang,Fujioka1999,Lemenkova2019b,Hall1995b}, as well as earthquakes and gravitation \cite{LinLo}. Double seismic zone beneath the Mariana Island arc is explained \cite{Samowitz} by the following conceptual scheme of the processes of the global plate tectonics. Subduction of the cooled plate into the mantle causes formation of the deep ocean trenches where, as a consequence, earthquakes and tsunamis originate. 
+Earlier studies on the marine geophysical mapping highlighted right relationship between the geomorphic patterns of the deep-sea channels, submarine fans and their topography related to the mid-ocean ridge tectonics, volcanism and dynamics of the Philippine back arc \cite{Menard,Chang,Fujioka1999,Lemenkova2019b,Hall1995b}, as well as earthquakes and gravitation \cite{LinLo}. Double seismic zone beneath the Mariana Island arc is well explained by the conceptual scheme of the processes of the global plate tectonics \cite{Samowitz}. Thus, subduction of the cooled plate into the mantle causes formation of the deep ocean trenches where earthquakes and tsunamis originate as a consequence of high seismicity. 
 
-Regional geomorphology of the seafloor is formed under certain geologic-geophysical interactions which typically develop under the influence of particular tectonic and geodynamic setting. Specifically, geomorphological evolution of the seafloor is largely controlled by a variety of factors including geological settings and tectonic plate dynamics \cite{Fujioka2002,Gong,Lemenkova2019a,Lemenkova2021a}, geophysical processes \cite{Seekings,Hall1995a,Ogawa}, submarine volcanism and seismicity se\cite{Ozawa,Lemenkova2020g,Lemenkova2021e}. Mapping geological structure and visualising geophysical setting is a basic methodology for recognition of complex geophysical activities on the seafloor of the Pacific Ocean \cite{ , , , }. These studies extend the types and strength of geological processes, including seismicity, that can be better understood by cartographic data visualisation.
+Regional geomorphology of the seafloor is formed under certain geologic-geophysical interactions affected by the influence of particular tectonic and geodynamic processes. Thus, the geomorphological evolution of the seafloor is largely controlled by geological evolution and tectonic plate dynamics \cite{Fujioka2002,Gong,Lemenkova2019a,Lemenkova2021a}, geophysical processes \cite{Seekings,Hall1995a,Ogawa}, submarine volcanism and seismicity se\cite{Ozawa,Lemenkova2020g,Lemenkova2021e}. Mapping geological structure and visualising geophysical setting is a basic methodology for recognition of complex geophysical activities on the seafloor of the Pacific Ocean \cite{PARCUTELA2020100032,BARRETTO2020106052,QINGYUN2021103504}. These studies extend the types and strength of geological processes, including seismicity, that can be better understood by mapping.
 
 Active volcanism and seismic situation around Philippine Sea margins (Fig. \ref{pic5}) shows earthquake events demonstrating high seismicity of the region caused by tectonic plates subduction. Subducting lithospheric plates act as giant radiators of the heat cooling, thickening, and progressively subsiding from ridge to trench. As a result, spreading seafloor, affected by moving plates, creates an axial rift, corrugated hills, and ridges, formed by the nearby faults. Plate subduction along the  trench caused trench roll-back, arc rupture and back-arc rifting of two interconnected back-arc basins: Parece Vela and Shikoku Basins. The \ac{kpr}, a remnant arc of the active \ac{ibm} system results from the spreading of the Shikoku Basin (Fig. \ref{pic1}). It plays a key role in the subduction process of the west \ac{psp}: the subduction zone here is characterised by the  subducting beneath the Kyushu Arc, Fig. \ref{pic1} \cite{Cao}. A set of geodynamic processes including subduction-interface rheology, phase-transition buoyancy, slab stagnation, rollback of mantle and ridge-push effects, cause significant trench motion of the \ac{ibm} detected as advance by global plate-motion observations \cite{Bina,Cizkova}. 
 
@@ -306,7 +306,7 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{Faccenna} C. Faccenna, E.D. Giuseppe, F. Funiciello, S. Lallemand, J. van Hunen, \emph{Control of seafloor aging on the migration of the Izu-Bonin-Mariana Trench}. Earth Planet. Sci. Lett. \textbf{288}, 386--398 (2009). \href{https://doi.org/10.1016/j.epsl.2009.09.042}{doi: 10.1016/j.epsl.2009.09.042}
 
-\bibitem{Lemenkova2020e}P. Lemenkova, \emph{Sentinel-2 for High Resolution Mapping of Slope-Based Vegetation Indices Using Machine Learning by SAGA GIS}. Transylv. Rev. Syst. Ecol. Res., \textbf{22}(3), 17--34 (2020). \href{https://doi.org/10.2478/trser-2020-0015}{doi: 10.2478/trser-2020-0015}
+\bibitem{Lemenkova2022c}P. Lemenkova, \emph{Console-Based Mapping of Mongolia Using GMT Cartographic Scripting Toolset for Processing TerraClimate Data}. Geosciences, \textbf{12}(3), 140 (2022). \href{https://doi.org/10.3390/geosciences12030140}{doi: 10.3390/geosciences12030140}
 
 \bibitem{HILL1957129} M.N. Hill, \emph{Recent geophysical exploration of the ocean floor}. Phys. Chem. Earth, \textbf{2}, 129--163 (1957). \href{https://doi.org/10.1016/0079-1946(57)90008-3}{doi: 10.1016/0079-1946(57)90008-3}.
 
@@ -324,6 +324,8 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{SACKS19843} I.S. Sacks, J.A. Snoke \emph{Seismological determinations of the subcrustal continental lithosphere}. Phys. Chem. Earth \textbf{15}, 3--37 (1984). \href{https://doi.org/10.1016/0079-1946(84)90003-X}{doi: 10.1016/0079-1946(84)90003-X}.
 
+\bibitem{QINGYUN2021103504} Q. Di, F. Tian, Y. Suo, R. Gao, S. Li, C. Fu, G. Wang, F. Li, Y. Tan \emph{Linkage of deep lithospheric structures to intraplate earthquakes: A perspective from multi-source and multi-scale geophysical data in the South China Block}. Earth-Sci. Rev. \textbf{214}, 103504 (2021). \href{https://doi.org/10.1016/j.earscirev.2021.103504}{doi: 10.1016/j.earscirev.2021.103504}.
+
 \bibitem{Lemenkova2019e} P. Lemenkova, \emph{Testing Linear Regressions by StatsModel Library of Python for Oceanological Data Interpretation}. Aquatic Sciences and Engineering, \textbf{34}(2), 51--60 (2019). \href{https://doi.org/10.26650/ASE2019547010}{doi: 10.26650/ASE2019547010}
 	
 \bibitem{Gutscher} M.A. Gutscher, F. Klingelhoefer, T. Theunissen, W. Spakman, T. Berthet, T.K. Wang, C.S. Lee, \emph{Thermal modeling of the SW Ryukyu forearc (Taiwan): Implications for the seismogenic zone and the age of the subducting Philippine Sea Plate (Huatung Basin)}. Tectonophysics, \textbf{692}, 131--142 (2016). \href{https://doi.org/10.1016/j.tecto.2016.03.029}{doi: 10.1016/j.tecto.2016.03.029}
@@ -335,6 +337,8 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 \bibitem{Hall1995b} R. Hall, M. Fuller, J.R. Ali, C.D. Anderson, \emph{The Philippine Sea Plate: magnetism and reconstructions}. Geophys. Monogr. Ser. AGU, Active Margins and Marginal Basins of the Western Pacific, \textbf{88}, 371--404 (1995). \href{https://doi.org/10.1029/GM088p0371}{doi: 10.1029/GM088p0371}
 
 \bibitem{Lemenkova2020a} P. Lemenkova, \emph{Variations in the bathymetry and bottom morphology of the Izu-Bonin Trench modelled by GMT}. Bull. Geogr. Phys. Geogr. Ser. \textbf{18}(1), 41--60 (2020). \href{https://doi.org/10.2478/bgeo-2020-0004}{doi: 10.2478/bgeo-2020-0004}
+
+\bibitem{BARRETTO2020106052} J. Barretto, R. Wood, J. Milsom, \emph{Benham Rise unveiled: Morphology and structure of an Eocene large igneous province in the West Philippine Basin}. Mar. Geol. \textbf {419}, 106052 (2020). \href{https://doi.org/10.1016/j.margeo.2019.106052}{doi: 10.1016/j.margeo.2019.106052}
 
 \bibitem{Klauco2017} M. Klaučo, B. Gregorová, U. Stankov, V. Marković, P. Lemenkova, \emph{Land planning as a support for sustainable development based on tourism: A case study of Slovak Rural Region}. Environ. Eng. Manag. J. \textbf{2(16)}, 449--458 (2017). \href{https://doi.org/10.30638/eemj.2017.045}{doi: 10.30638/eemj.2017.045} 
 
@@ -356,6 +360,8 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{Uchida} N. Uchida, T. Matsuzawa, J. Nakajima, A. Hasegawa, \emph{Subduction of a wedge-shaped Philippine Sea plate beneath Kanto, central Japan, estimated from converted waves and small repeating earthquakes}, J. Geophys. Res. Solid Earth \textbf{115}(B7) (2010). \href{https://doi.org/10.1029/2009JB006962}{doi: 10.1029/2009JB006962}
 
+\bibitem{7951907} Z. Ma, \emph{Seismic data attribute extraction based on Hadoop platform}, 2017 IEEE 2nd Intl. Conf. Cloud Computing and Big Data Analysis (ICCCBDA), 180--184 (2017). \href{https://doi.org/10.1109/ICCCBDA.2017.7951907}{doi: 10.1109/ICCCBDA.2017.7951907}
+
 \bibitem{Lemenkova2019b} P. Lemenkova, \emph{Statistical Analysis of the Mariana Trench Geomorphology Using R Programming Language}. Geod. Cartogr. \textbf{45}(2), 57--84 (2019). \href{https://doi.org/10.3846/gac.2019.3785}{doi: 10.3846/gac.2019.3785}
 
 \bibitem{Ozawa} A. Ozawa, T. Tagami, E.L. Listanco, C.B. Arpa, M. Sudo, \emph{Initiation and propagation of subduction along the Philippine Trench: evidence from the temporal and spatial distribution of volcanoes}. J. Asian Earth Sci. \textbf{23}, 105--111 (2004). \href{https://doi.org/10.1016/S1367-9120(03)00112-3}{doi: 10.1016/S1367-9120(03)00112-3}
@@ -364,15 +370,23 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{Lemenkova2021a} P. Lemenkova, \emph{Submarine tectonic geomorphology of the Pliny and Hellenic Trenches reflecting geologic evolution of the southern Greece}. Rud. Geolosko Naft. Zb. \textbf{36}(4), 33--48 (2021). \href{https://doi.org/10.17794/rgn.2021.4.4}{doi: 10.17794/rgn.2021.4.4}
 
+\bibitem{6910592} M. Zhang, P. Yue, X. Guo, \emph{GIScript: Towards an interoperable geospatial scripting language for GIS programming}. 2014 The Third Intl. Conf. Agro-Geoinformatics (2014), 1--5.  \href{https://doi.org/10.1109/Agro-Geoinformatics.2014.6910592}{doi: 10.1109/Agro-Geoinformatics.2014.6910592}
+
 \bibitem{Samowitz} I.R. Samowitz, D.W. Forsyth, \emph{Double seismic zone beneath the Mariana Island arc}. J. Geophys. Res. \textbf{86}, 7013--7021 (1981). \href{https://doi.org/10.1029/JB086iB08p07013}{doi: 10.1029/JB086iB08p07013}
 
 \bibitem{Lemenkova2020h} P. Lemenkova, \emph{Java and Sumatra Segments of the Sunda Trench: Geomorphology and Geophysical Settings Analysed and Visualized by GMT}. Glasnik Srpskog Geografskog Drustva, \textbf{100}(2), 1--23 (2020). \href{https://doi.org/10.2298/GSGD2002001L}{doi: 10.2298/GSGD2002001L}
 
 \bibitem{KIMURA200918} H. Kimura, K. Kasahara, T. Takeda \emph{Subduction process of the Philippine Sea Plate off the Kanto district, central Japan, as revealed by plate structure and repeating earthquakes}. Tectonophysics \textbf{472}(1), 18--27 (2009). \href{https://doi.org/10.1016/j.tecto.2008.05.012}{doi: 10.1016/j.tecto.2008.05.012}.
 
+\bibitem{PARCUTELA2020100032} N.E. Parcutela, C.B. Dimalanta, L.T. Armada, G.P. Yumul \emph{PHILCRUST3.0: New constraints in crustal growth rate computations for the Philippine arc}. J. Asian Earth Sci.: X. \textbf{4}, 100032 (2020). \href{https://doi.org/10.1016/j.jaesx.2020.100032}{doi: 10.1016/j.jaesx.2020.100032}
+
+\bibitem{SUZUKI201690} K. Suzuki, M. Nakano, N. Takahashi, T. Hori, S. Kamiya, E. Araki, R. Nakata, Y. Kaneda, \emph{Synchronous changes in the seismicity rate and ocean-bottom hydrostatic pressures along the Nankai trough: A possible slow slip event detected by the Dense Oceanfloor Network system for Earthquakes and Tsunamis (DONET)}. Tectonophysics \textbf{680}, 90--98 (2016). \href{https://doi.org/10.1016/j.tecto.2016.05.012}{10.1016/j.tecto.2016.05.012}.
+
 \bibitem{Lemenkova2021d} P. Lemenkova, \emph{Dataset compilation by GRASS GIS for thematic mapping of Antarctica: Topographic surface, ice thickness, subglacial bed elevation and sediment thickness}. Czech Polar Rep. \textbf{11}(1), 67--85 (2021). \href{https://doi.org/10.5817/CPR2021-1-6}{doi: 10.5817/CPR2021-1-6}
 
 \bibitem{Buetal} X. Bu, P. Yue, L. Wang, M. Zhang. \emph{A scripting approach for integrating software packages and geoprocessing services into scientific workflows}. 2015 Fourth Intl. Conf. Agro-Geoinformatics (Agro-geoinformatics),15--18 (2015). \href{https://doi.org/10.1109/Agro-Geoinformatics.2015.7248095}{doi: 10.1109/Agro-Geoinformatics.2015.7248095}
+
+\bibitem{9497221} S. Bhattacharjee, L.B.A. Rahim. \emph{A Hadoop Allied Security Platform for Seismic Big Data Processing}. 2021 Intl. Conf. Computer Information Sciences (ICCOINS) 372--377 (2021).  \href{https://doi.org/10.1109/ICCOINS49721.2021.9497221}{doi: 10.1109/ICCOINS49721.2021.9497221}
 
 \bibitem{Lemenkova2021e}P. Lemenkova, \emph{Topography of the Aleutian Trench south-east off Bowers Ridge, Bering Sea, in the context of the geological development of North Pacific Ocean}. Baltica \textbf{34}(1), 27--46 (2021). \href{https://doi.org/10.5200/baltica.2021.1.3}{doi: 10.5200/baltica.2021.1.3}
 
@@ -381,6 +395,8 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 \bibitem{Lemenkova2020d}P. Lemenkova, \emph{Geomorphology of the Puerto Rico Trench and Cayman Trough in the Context of the Geological Evolution of the Caribbean Sea}. Ann. Univ. Mariae Curie-Skłodowska, B Geogr. Geol. Mineral. Petrogr. \textbf{75}, 115--141 (2020). \href{https://doi.org/10.17951/b.2020.75.115-141}{doi: 10.17951/b.2020.75.115-141}
 
 \bibitem{Sdrolias} M. Sdrolias, W.R. Roest, R.D. Müller, \emph{An expression of Philippine Sea plate rotation: the Parece Vela and Shikoku Basins}. Tectonophysics, \textbf{394} 69--86 (2004). \href{https://doi.org/10.1016/j.tecto.2004.07.061}{doi: 10.1016/j.tecto.2004.07.061}
+
+\bibitem{7363985} Y. Yan, L. Huang, L. Yi,  \emph{Is Apache Spark scalable to seismic data analytics and computations?} 2015 IEEE Intl. Conf. Big Data (Big Data), 2036--2045 (2015).  \href{https://doi.org/10.1109/BigData.2015.7363985}{doi: 10.1109/BigData.2015.7363985}
 
 \bibitem{Lemenkova2019f}P. Lemenkova, \emph{AWK and GNU Octave Programming Languages Integrated with Generic Mapping Tools for Geomorphological Analysis}. GeoSci. Eng. \textbf{65}(4), 1--22 (2019). \href{https://doi.org/10.35180/gse-2019-0020}{doi: 10.35180/gse-2019-0020}
 
@@ -400,9 +416,9 @@ The author owes her gratitude to the anonymous reviewers who performed careful r
 
 \bibitem{Weissel} J.K. Weissel, R.N. Anderson, \emph{Is there a Caroline plate?} Earth Planet. Sci. Lett. \textbf{41}, 143--158 (1978). \href{https://doi.org/10.1016/0012-821X(78)90004-3}{doi: 10.1016/0012-821X(78)90004-3}
 
-\bibitem{Wessel} P. Wessel, W.H.F. Smith, \emph{New, improved version of generic mapping tools released}. EOS Trans. AGU \textbf{79(47)}, 579--579 (1998). \href{https://doi.org/10.1029/98EO00426}{doi: 10.1029/98EO00426}
+\bibitem{Lemenkova2020e}P. Lemenkova, \emph{Sentinel-2 for High Resolution Mapping of Slope-Based Vegetation Indices Using Machine Learning by SAGA GIS}. Transylv. Rev. Syst. Ecol. Res., \textbf{22}(3), 17--34 (2020). \href{https://doi.org/10.2478/trser-2020-0015}{doi: 10.2478/trser-2020-0015}
 
-\bibitem{Lemenkova2022c}P. Lemenkova, \emph{Console-Based Mapping of Mongolia Using GMT Cartographic Scripting Toolset for Processing TerraClimate Data}. Geosciences, \textbf{12}(3), 140 (2022). \href{https://doi.org/10.3390/geosciences12030140}{doi: 10.3390/geosciences12030140}
+\bibitem{Wessel} P. Wessel, W.H.F. Smith, \emph{New, improved version of generic mapping tools released}. EOS Trans. AGU \textbf{79(47)}, 579--579 (1998). \href{https://doi.org/10.1029/98EO00426}{doi: 10.1029/98EO00426}
 
 \bibitem{IIDAKA201741} T. Iidaka, T. Igarashi, A. Hashima, A. Kato, T. Iwasaki, \emph{{Receiver function images of the distorted Philippine Sea slab contact with the continental crust: Implications for generation of the 1891 Nobi earthquake (Mj 8.0)}. Tectonophysics}, \textbf{717}, 41--50 (2017). \href{https://doi.org/10.1016/j.tecto.2017.07.010}{doi: 10.1016/j.tecto.2017.07.010}
 
