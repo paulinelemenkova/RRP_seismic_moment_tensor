@@ -3,7 +3,7 @@
 LaTeX source for the peer-reviewed article by Polina Lemenkova.
 
 **Published in:** *Romanian Reports in Physics* **2022**, *74*(3), 707
-**Article:** http://www.rrp.infim.ro/2022/AN74707.pdf
+**Article:** https://rrp.nipne.ro/2022/AN74707.pdf
 **Zenodo:** https://doi.org/10.5281/zenodo.7064200
 **SSRN:** https://ssrn.com/abstract=4214465
 
